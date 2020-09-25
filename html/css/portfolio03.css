@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&family=Raleway:wght@200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&family=Raleway:wght@200&display=swap');
+
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+                      
+body {}
+
+/* #wrap2 */
+#wrap2 {
+    position: relative; 
+    width: 100%; height: 100%;
+}
+
+/* main */
+main {
+    position: relative; 
+    width: 100%; height: 100%;
+    background-color: #dd9f06;/*main color*/
+}
+
+/* .nav */
+main .nav {
+    position: absolute; 
+    top:5%; right: 3%;
+    width: 350px; height: auto; 
+    color: #fff;
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 500;
+}
+main .nav ul {
+    float: left; 
+    margin-right: 30px;
+}
+main .nav li {}
+main .nav li a {
+    display: block; 
+    color: rgba(255,255,255,0.5);
+    font-size: 20px; line-height: 35px;
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 200;
+}
+main .nav li:hover a {color: #fff;}
+main .nav span {
+    position: relative; top:-5px;;
+    display: block; 
+    float: right;
+    width: 150px;
+    text-align: right; 
+}
+main .nav span a{
+    font-weight: bold; font-size: 28px;
+}
+main .nav span a:hover {opacity: 0.8;}
+
+/* .title */
+main .title {
+    position: relative; 
+    top:32%; left: 3.3%;
+    width: 80%; 
+    text-align: left;
+    color: #fff; 
+}
+main .title h1 {
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 200;
+    font-size: 74px; 
+    text-transform: uppercase;
+    line-height: 100px; 
+}
+main .title h2 {
+    font-size: 30px; color: #abffa3; /**/
+    padding-left: 5px;
+    font-family: 'NEXON Lv1 Gothic OTF';
+}
+main .title p {
+    font-size: 1em; line-height: 2.2;
+    padding-left: 5px; padding-top: 70px; 
+}
+main .title span {
+    display: block; 
+    position: relative; top:50px;
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 500;
+    font-size: 1em; 
+    padding-left: 5px; 
+}
+
+/* .margin_wrap 가운데정렬 */
+.margin_wrap{
+    width: 88%;
+    margin: 0 auto;
+}
+/* .back 어둡게 */
+.back{background:rgba(0,0,0,0.25);}
+
+
+/* #cont1 */
+section#cont1 {
+    position: relative; 
+    width: 100%; height: auto;
+    background-color: #fff;
+}
+#cont1 .cont1-warp {}
+.cont1-warp {margin-top: 100px;}
+.cont1-warp .text {
+    width: 100%; height: 150px; 
+    position: relative;
+    text-align: center; 
+}
+.cont1-warp .text p {
+    font-size: 150px; line-height: 150px; 
+    color: #f2f2f2;
+    font-family: 'NEXON Lv1 Gothic OTF Light';
+}
+.cont1-warp .text span {
+    display: block;
+    width: 100%; height: 70px; 
+    position: absolute; 
+    left:0; top:50%;
+    text-align: center; font-size: 15px; line-height: 70px;
+    color: #828080;
+    transform: translateY(-50%);
+}
+
+.line {
+    background: #eee;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 77px;
+    opacity: 0.2;
+}
+
+.work_t {
+    width: 100%;
+    color: rgba(221, 159, 6, 0.8); /*main color*/
+    font-size: 1.97rem;
+    font-weight: bold; 
+    text-align: center;
+    margin-top: 77px;
+}
+/* .fix-img */
+.fix-img {
+    width: 100%; height: 350px;
+    background: url(../img/fix-img.jpg)fixed center;
+    background-size: cover;
+    margin-bottom: 50px;
+    margin-top: 77px;
+}
+.fix-img div{
+    width: 100%;height: 100%;
+}
+.fix-img h3 {
+    font-size: 3rem;
+    line-height: 367px;
+    font-weight: 100;
+    font-family: 'NEXON Lv1 Gothic OTF Light'; 
+    text-align: center;
+    color: rgba(255,255,255,0.8);
+    text-shadow: 1px 1px 0px #5c4915;
+}
+
+/* #cont2 */
+#cont2 {
+    width: 100%; height: auto;
+    margin-top: 77px;
+}
+.cont2-warp {
+    position: relative;
+    top:20px;
+}
+/* #web01 */
+.web {
+    position: relative;
+    width: 100%;
+    margin-top: 110px;
+}
+.web figure    {
+    float: left;
+    width: 60%; 
+    margin-right:3%;
+}
+.web figure img {
+    display: block; 
+    width: 100%; 
+    transition: transform 6s ease;
+}
+.web figure img:hover {transform: scale(1.1);}
+
+.web figcaption {
+    float: left;
+    width: 35%; 
+    margin-top: 150px;
+}
+.web figcaption span {
+    display: block;
+    width: 70px;height: 4px;
+    margin: 15px 0;
+    background-color: #dd9f06;
+}
+.web:nth-child(3) figcaption span {width: 97px;}
+.web figcaption h5 {
+    font-size: 2.3em;
+    font-weight: 700;
+    color: #505050;
+}
+.web figcaption small {
+    font-size: 1.2em;
+    color: #dd9f06;
+}
+.web figcaption p {
+    font-size: 1em;
+}
+.web .btn {
+    position: relative;
+    display: block;
+    width: 120px; height: 35px;
+    border-radius: 20px;
+    border:1px solid #505050;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 35px;
+    color: #505050;
+    transition: box-shadow 0.2s ease;
+}
+.web .btn:hover {
+    box-shadow: inset 0 80px 0 0 #505050;
+    color: #fff;
+}
+
+.web:nth-child(1){
+    margin-bottom: 120px;
+}
+.web:nth-child(2){
+    margin-left: 60px;
+}
+
+/* footer */
+footer {
+    position: relative;
+    left: 0; top:0;
+    width: 100%; 
+    background-color: #878787;
+    text-align: center;
+    color: #fff;
+    font-family: 'Raleway', sans-serif; 
+    margin-top: 20px;
+    padding: 40px 0;
+    text-transform: uppercase;
+}
+footer strong {
+    display: block;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-bottom: 3px;
+}
+footer span {
+    font-weight: 200;
+    font-size: 0.8em; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
