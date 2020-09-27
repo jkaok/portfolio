@@ -42,15 +42,10 @@ header .bars {
     position: relative; 
     width: 100%; height: 100%; 
 }
-.slidelist {position: relative; height: 100%;}
-/*.slidelist .backimg1 {
-    position: relative; width: 100%;height: 100%;
-    background-image:url(../img/back001.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    filter: saturate(150%) brightness(86%);
-}*/
+.slidelist {
+    position: relative; 
+    height: 100%;
+}
 .slidelist div {
     position: absolute; 
     left: 0; top:0;
@@ -110,9 +105,9 @@ header .bars {
 }
 #menu a {
     position: relative;
-    display: inline-block; 
+    display: inline-block; /* inline-block */
     padding: 10px 0px; 
-    font-size: 5.2rem; /*menu폰트크기*/
+    font-size: 5.2rem; /* menu 폰트크기 */
     line-height: 1.3; 
     text-transform: uppercase; 
     font-family: 'Raleway', sans-serif; 
@@ -129,47 +124,7 @@ header .bars {
     transition: all 0.4s ease;
     opacity: 0;
 }
-#menu li:hover a:before {opacity: 1; transform: translateX(0);}
-
-/*#menu li .a1:before {width: 99%;}
-#menu li .a2:before {width: 73%;}
-#menu li .a3:before {width: 88%;}
-#menu li .a4:before {width: 41%;}   .a1:before, .a2:before, .a3:before, .a4:before */
-
-/*
-#menu li:nth-child(1):hover .a1:before {transform: translateX(8%);}
-#menu li:nth-child(2):hover .a2:before {transform: translateX(36%);}
-#menu li:nth-child(3):hover .a3:before {transform: translateX(30%);}
-#menu li:nth-child(4):hover .a4:before {transform: translateX(64%);}
-*/
-
-/*
-#menu li .sub {
-    position: relative; 
-    left: 0; top:-10px;
-    display: none;
-}
-#menu li .sub ul {
-    overflow: hidden;
-    height: 60px; width: 100%;
-}
-#menu li .sub li {
-    display: inline-block; 
-    text-align: right; 
-    
-}
-#menu li:nth-child(1) .sub li {width: 105px;}
-#menu li:nth-child(2) .sub li {width: 152px;}
-#menu li:nth-child(3) .sub li {width: 130px}
-#menu li:nth-child(4) .sub li {width: 100px;}
-
-#menu li .sub a {
-    font-size: 13px; 
-    line-height: 19px;
-    color: rgba(255,255,255,0.45);
-}
-#menu li .sub li:hover a {color:#ffa700;}
-*/
+#menu li:hover a:before {opacity: 1; transform: translateX(0%);}
 
 /* side 메뉴 */
 #side {
@@ -186,7 +141,7 @@ header .bars {
 }
 #side h5 {
     font-family: 'Raleway', sans-serif;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 1.2rem;
     color: #404040;
     margin-left: 44px;
@@ -199,7 +154,7 @@ header .bars {
     width: 26px;height: 26px;
     color: #fff;
     background-color: #ffa700;
-    font-size: 14px; font-weight: bold;
+    font-size: 16px; font-weight: bold;
     text-align: center; line-height: 26px;
 }
 #side .btn {}
@@ -323,8 +278,8 @@ header .bars {
     .copyright span {font-size: 0.86em;}
     .copyright span:nth-child(1) {font-size: 0.96em;}
     
-    #side li a{font-size: 2rem;}
-    #side .sub li a {font-size: 0.6rem; line-height: 17px;}
+    #side li a{font-size: 2rem; line-height: 1;}
+    #side .sub li a {font-size: 0.6rem; line-height: 15px;}
 }
     
 
