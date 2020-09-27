@@ -224,6 +224,7 @@ header .bars {
     display: inline-block;
     padding-bottom: 10px;
 }
+
 #side .sub li a {
     font-size: 0.78rem; 
     line-height: 19px;
@@ -321,6 +322,9 @@ header .bars {
     
     .copyright span {font-size: 0.8em;}
     .copyright span:nth-child(1) {font-size: 0.9em;}
+    
+    #side li a{font-size: 2rem;}
+    #side .sub li a {font-size: 0.6rem; line-height: 17px;}
 }
     
 
