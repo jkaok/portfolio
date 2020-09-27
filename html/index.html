@@ -34,10 +34,10 @@
     <!--#menu-->
     <div id="menu">
         <ul>
-            <li><a href="portfolio2.html" class="a1">Editorial Design</a></li>
-            <li><a href="portfolio3.html" class="a2">Web Design</a></li>
-            <li><a href="portfolio4.html" class="a3">Graphic Edit</a></li>
-            <li><a href="portfolio5.html" class="a4">About</a></li>
+            <li><a href="portfolio2.html">Editorial Design</a></li>
+            <li><a href="portfolio3.html">Web Design</a></li>
+            <li><a href="portfolio4.html">Graphic Edit</a></li>
+            <li><a href="portfolio5.html">About</a></li>
         </ul>
     </div>
 
@@ -148,6 +148,11 @@
         $(function() {
             var window_height = $(window).height();
             $("body").css("height", window_height);
+            
+            $(window).resize(function(){ //반응형 화면 
+				var window_height = $(window).height();
+				$("body").css("height", window_height); 
+			});
         });
 
     </script>

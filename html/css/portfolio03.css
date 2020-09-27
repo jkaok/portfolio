@@ -183,13 +183,14 @@ section#cont1 {
 .web {
     position: relative;
     width: 100%;
-    margin-top: 110px;
+    margin-top: 100px;
 }
 .web figure    {
     float: left;
     width: 60%; 
     margin-right:3%;
 }
+.frignt {float: right;}
 .web figure img {
     display: block; 
     width: 100%; 
@@ -200,7 +201,7 @@ section#cont1 {
 .web figcaption {
     float: left;
     width: 35%; 
-    margin-top: 150px;
+    margin-top: 100px;
 }
 .web figcaption span {
     display: block;

@@ -1,0 +1,66 @@
+/* mediaquery */
+
+@media only screen and (max-width : 980px){
+    .cont1-warp .text p {font-size: 110px;}
+}
+@media only screen and (max-width : 730px){
+    .cont1-warp .text p {font-size: 90px;}
+    .cont1-warp .text span {font-size: 12px;}
+    
+    .lightbox a {
+        width: 90%; 
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .lightbox a:nth-child(2n+1) {margin-left: 5%;}
+
+}
+@media only screen and (max-width : 550px){
+    main .title h1 {
+        font-size: 65px;
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+    .cont1-warp .text p {font-size: 75px;}
+    .cont1-warp .text span {font-size: 12px;}
+    .fix-img h3 {font-size: 2rem;}
+}
+@media only screen and (max-width : 440px){
+    .cont1-warp .text p {font-size: 60px;}
+    .cont1-warp .text span {font-size: 11px;}
+    
+    /* portfolio2 */
+    .web figure {
+        width: 100%;
+        margin-right:0%;
+    }
+    .web figcaption {
+        width: 100%;
+        margin-top: 50px;
+    }
+    
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

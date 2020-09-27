@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="css/j_reset.css" />
     <link rel="stylesheet" href="css/portfolio05.css" />
+    <link rel="stylesheet" href="css/mediaquery_all.css" />
     <link rel="stylesheet" href="css/font-awesome.css" />
 
 </head>
@@ -143,11 +144,15 @@ css3의 여러가지 레이아웃 표현방법과 애니메이션의 구현은 �
     </div>
 
     <script src="js/jquery-3.4.1.js" type="text/javascript" text="javascript"></script>
-    <script src="js/portfolio_index.js" type="text/javascript" text="javascript"></script>
     <script>
         $(function() {
             var window_height = $(window).height();
             $("body").css("height", window_height);
+            
+            $(window).resize(function(){ //반응형 화면 
+				var window_height = $(window).height();
+				$("body").css("height", window_height); 
+			});
 
         });
     </script>

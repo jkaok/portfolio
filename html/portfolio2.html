@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="css/j_reset.css" />
     <link rel="stylesheet" href="css/portfolio02.css" />
+    <link rel="stylesheet" href="css/mediaquery_all.css" />
     <link rel="stylesheet" href="css/font-awesome.css" />
     <link rel="stylesheet" href="css/lightgallery.css">
 
@@ -56,7 +57,7 @@
                     <h3>무슨 일을 하셨나요?</h3>
                 </div>
             </div>
-        </section>
+        </section><!-- //#cont1 -->
         
         <!-- #cont2 -->
         <section id="cont2">
@@ -68,15 +69,43 @@
                     <span>mac_inDesign</span>
                     <span class="op"></span>
                 </a>
-                <a href="img/portfolio-7.jpg"><img src="img/portfolio-7.jpg" alt="image02"><em>힐스테이트 초정장</em><span>mac_inDesign</span></a>
-                <a href="img/portfolio-6.jpg"><img src="img/portfolio-6.jpg" alt="image03"><em>한국다쓰노 주유기 카달로그</em><span>mac_inDesign</span></a>
-                <a href="img/portfolio-5.jpg"><img src="img/portfolio-5.jpg" alt="image04"><em>유아영어동화전집 가이드북</em><span>mac_inDesign</span></a>
-                <a href="img/portfolio-4.jpg"><img src="img/portfolio-4.jpg" alt="image05"><em>유아영어동화전집 CD/DVD</em><span>mac_inDesign</span></a>
-                <a href="img/portfolio-3.jpg"><img src="img/portfolio-3.jpg" alt="image06"><em>패키지_휴대용 공기청정기</em><span>mac_inDesign</span></a>
-                <a href="img/portfolio-2.jpg"><img src="img/portfolio-2.jpg" alt="image07"><em>상세페이지_공진단</em><span>mac_inDesign</span></a>
-                <a href="img/portfolio-1.jpg"><img src="img/portfolio-1.jpg" alt="image08"><em>상세페이지_공기청정기</em><span>mac_inDesign</span></a>
-            </div>
-        </section>
+                <a href="img/portfolio-7.jpg">
+                    <img src="img/portfolio-7.jpg" alt="image02">
+                    <em>힐스테이트 초정장</em>
+                    <span>mac_inDesign</span>
+                </a>
+                <a href="img/portfolio-6.jpg">
+                    <img src="img/portfolio-6.jpg" alt="image03">
+                    <em>한국다쓰노 주유기 카달로그</em>
+                    <span>mac_inDesign</span>
+                </a>
+                <a href="img/portfolio-5.jpg">
+                    <img src="img/portfolio-5.jpg" alt="image04">
+                    <em>유아영어동화전집 가이드북</em>
+                    <span>mac_inDesign</span>
+                </a>
+                <a href="img/portfolio-4.jpg">
+                    <img src="img/portfolio-4.jpg" alt="image05">
+                    <em>유아영어동화전집 CD/DVD</em>
+                    <span>mac_inDesign</span>
+                </a>
+                <a href="img/portfolio-3.jpg">
+                    <img src="img/portfolio-3.jpg" alt="image06">
+                    <em>패키지_휴대용 공기청정기</em>
+                    <span>mac_inDesign</span>
+                </a>
+                <a href="img/portfolio-2.jpg">
+                    <img src="img/portfolio-2.jpg" alt="image07">
+                    <em>상세페이지_공진단</em>
+                    <span>mac_inDesign</span>
+                </a>
+                <a href="img/portfolio-1.jpg">
+                    <img src="img/portfolio-1.jpg" alt="image08">
+                    <em>상세페이지_공기청정기</em>
+                    <span>mac_inDesign</span>
+                </a>
+            </div><!-- //.lightbox -->
+        </section><!-- //#cont2 -->
         
         <!-- footer -->
         <footer>
@@ -88,14 +117,18 @@
     
     
     <script src="js/jquery-3.4.1.js" type="text/javascript" text="javascript"></script>
-    <script src="js/portfolio_index.js" type="text/javascript" text="javascript"></script>
     <script src="js/portfolio_parallax2.js" type="text/javascript" text="javascript"></script>
     <script src="js/lightgallery.min.js"></script>
     <script>
         $(function() {
             var window_height = $(window).height();
             $("body").css("height", window_height);
-
+            
+            $(window).resize(function(){ //반응형 화면 
+				var window_height = $(window).height();
+				$("body").css("height", window_height); 
+			}); 
+            
             //라이트박스
             $(".lightbox").lightGallery();
         });

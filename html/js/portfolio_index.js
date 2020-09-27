@@ -1,6 +1,6 @@
 $(function(){
     
-    /* slide */
+    /* slide 바탕이미지 */
     var current = 0;
     
     $(".slidelist").children("div:gt(0)").fadeOut();
@@ -19,16 +19,8 @@ $(function(){
                 
     }, 4500);
     
-    
-    /* menu */
-    $("#menu>ul>li").mouseover(function(){
-        $(this).find(".sub").stop().slideDown(600);
-    });
-    $("#menu>ul>li").mouseout(function(){
-        $(this).find(".sub").stop().slideUp(600);
-    });
 
-    /* side */
+    /* side 메뉴보이기 */
     $(".bars").click(function(){
         $("#side").addClass("sideshow");
     });
@@ -37,7 +29,7 @@ $(function(){
     });
     
     
-}); /* function */
+});/*//function*/
     
     
     

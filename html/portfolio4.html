@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="css/j_reset.css" />
     <link rel="stylesheet" href="css/portfolio04.css" />
+    <link rel="stylesheet" href="css/mediaquery_all.css" />
     <link rel="stylesheet" href="css/font-awesome.css" />
 
 </head>
@@ -117,11 +118,15 @@
 
     <script src="js/jquery-3.4.1.js" type="text/javascript" text="javascript"></script>
     <script src="js/portfolio_parallax4.js" type="text/javascript" text="javascript"></script>
-    <script src="js/portfolio_index.js" type="text/javascript" text="javascript"></script>
     <script>
         $(function() {
             var window_height = $(window).height();
             $("body").css("height", window_height);
+            
+            $(window).resize(function(){ //반응형 화면 
+				var window_height = $(window).height();
+				$("body").css("height", window_height); 
+			});
 
         });
     </script>
