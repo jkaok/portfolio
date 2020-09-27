@@ -110,7 +110,7 @@ header .bars {
 }
 #menu a {
     position: relative;
-    display: block; 
+    display: inline-block; 
     padding: 10px 0px; 
     font-size: 5.2rem; /*menu폰트크기*/
     line-height: 1.3; 
@@ -119,24 +119,29 @@ header .bars {
     font-weight: 200;
     overflow: hidden;
 }
-#menu li .a1:before, .a2:before, .a3:before, .a4:before {
+#menu a:before {
     content: '';
     position: absolute; 
-    right: 0; bottom: 17px;
+    right: 0; bottom: 3%;
     width: 100%; height: 2px; 
     background-color: #ffa700; 
     transform: translateX(100%);
     transition: all 0.4s ease;
+    opacity: 0;
 }
+#menu li:hover a:before {opacity: 1; transform: translateX(0);}
+
 /*#menu li .a1:before {width: 99%;}
 #menu li .a2:before {width: 73%;}
 #menu li .a3:before {width: 88%;}
-#menu li .a4:before {width: 41%;}*/
+#menu li .a4:before {width: 41%;}   .a1:before, .a2:before, .a3:before, .a4:before */
 
+/*
 #menu li:nth-child(1):hover .a1:before {transform: translateX(8%);}
 #menu li:nth-child(2):hover .a2:before {transform: translateX(36%);}
 #menu li:nth-child(3):hover .a3:before {transform: translateX(30%);}
 #menu li:nth-child(4):hover .a4:before {transform: translateX(64%);}
+*/
 
 /*
 #menu li .sub {
@@ -280,19 +285,20 @@ header .bars {
 /* media query */
 @media only screen and (max-width : 1200px) {
     #menu a {font-size: 4.5rem;}
-    .word {position: fixed; top: 47%;}
+    .word {top: 47%;}
 }
 @media only screen and (max-width : 1110px) {
     #menu a {font-size: 3.7rem;}
-    .word {position: fixed; top: 50%;}
+    .word {top: 50%;}
 }
 @media only screen and (max-width : 850px) {
     header nav ul {display: none;}
-    .word {position: fixed; top: 65%;}
+    .word {top: 65%;}
 }
 @media only screen and (max-width : 640px) {
-    #menu a {font-size: 3rem;}
-    .word {position: fixed; top: 55%;}
+    #menu {top:4%;}
+    #menu a {font-size: 2.9rem;}
+    .word {top: 55%;}
     .word p:nth-child(1) {
     font-size: 0.9rem; 
     line-height: 1.8;
@@ -303,7 +309,17 @@ header .bars {
     line-height: 1.8;
     }
 }
-
+@media only screen and (max-width : 490px) {
+    #menu {top:4.3%; margin-right: 10px;}
+    #menu a {font-size: 2.2rem;}
+    
+    .word p:nth-child(1) {font-size: 0.8rem;}
+    .word p:nth-child(2) {font-size: 0.8rem;}
+    
+    .copyright span {font-size: 0.8em;}
+    .copyright span:nth-child(1) {font-size: 0.9em;}
+}
+    
 
 
 
