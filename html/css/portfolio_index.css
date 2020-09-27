@@ -314,14 +314,14 @@ header .bars {
     #side {width: 100%;}
 }
 @media only screen and (max-width : 490px) {
-    #menu {top:4.3%; margin-right: 10px;}
+    #menu {top:4.3%; margin-right: 15px;}
     #menu a {font-size: 2.2rem;}
     
     .word p:nth-child(1) {font-size: 0.8rem;}
     .word p:nth-child(2) {font-size: 0.8rem;}
     
-    .copyright span {font-size: 0.8em;}
-    .copyright span:nth-child(1) {font-size: 0.9em;}
+    .copyright span {font-size: 0.86em;}
+    .copyright span:nth-child(1) {font-size: 0.96em;}
     
     #side li a{font-size: 2rem;}
     #side .sub li a {font-size: 0.6rem; line-height: 17px;}
