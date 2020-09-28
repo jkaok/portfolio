@@ -2,7 +2,7 @@
     
 $(function(){
 /* portfolio4 */
-    var $img = $("#cont2 .img");
+    var $img = $("#cont2 .photo-img");
     var $cont2 = $("#cont2");
     
     $(window).scroll(function(){

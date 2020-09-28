@@ -4,6 +4,27 @@
 @media only screen and (max-width : 980px){
     .cont1-warp .text p {font-size: 110px;}
     main .title {width: 92%;}
+    
+}
+
+/* portfolio3 */
+@media only screen and (max-width : 860px){
+    .web figure {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+    .web figcaption {
+        float: none;
+        width: 100%;
+        position:relative;
+        top: 0; left: 0;
+        transform: translateY(0);
+        margin-top: 70px;
+    }
+    .web:nth-child(2) figcaption {margin-top: 0px;}
+    
+    #cont1 .three span {font-size: 1.5rem;}
 }
 
 @media only screen and (max-width : 730px){
@@ -15,19 +36,49 @@
         margin-right: 5%;
     }
     .lightbox a:nth-child(2n+1) {margin-left: 5%;}
-    #intro p {white-space:normal;}
+    
+    #intro {
+        padding: 80px 20px 50px 20px;
+        box-sizing: border-box;
+    }
+    #intro p {white-space:normal; margin-top: 50px;}
+    
+    #cont1 .three {padding-bottom: 60px;}
+    
+    /* portfolio4 */
+    .photo .photo-img {
+        width: 100%;
+        padding: 45px;
+        margin-left: 0%; 
+        margin-bottom: 10%;
+    }
+    .photo .photo-img em {
+        font-size: 9px; 
+        padding-top: 13px;
+        padding-left: 44px;
+    }
+    .photo-img:nth-child(2n+1) {margin-left: 0;}
+    .photo-img:nth-child(3) {margin-top: 0;}
+    .photo-img:nth-child(5) {margin-top: 0;}
+    .photo-img:nth-child(7) {margin-top: 0;}
+    .photo-img:nth-child(9) {margin-top: 0;}
+    .photo-img:nth-child(11) {margin-left: 0;}
+    
 }
 
 @media only screen and (max-width : 550px){
-    #wrap2 {height: 125%;}
+    #wrap2 {height: 130%;}
     main .title h1 {
         font-size: 65px;
         line-height: 1.2;
         margin-bottom: 10px;
     }
     main .title p {
-        font-size: 0.9em;
+        font-size: 0.83em;
     }
+    .cont1-warp {margin-top: 70px;}
+    .line {margin-top: 50px;}
+    .work_t {margin-top: 50px;}
     
     .cont1-warp .text p {font-size: 75px;}
     .cont1-warp .text span {font-size: 12px;}
@@ -44,6 +95,11 @@
     .his-desc .hisp small:nth-child(1) {
         padding-left:0px;
     }
+    
+    .fix-img {
+        background-position: -80px 0px;
+    }
+    
 }
 
 @media only screen and (max-width : 440px){
@@ -56,29 +112,13 @@
         font-size: 1.4rem;
         line-height: 2.1;
     }
+    #cont1 .three span small {white-space: pre-wrap;}
 }
 
 @media only screen and (max-width : 380px) {
     main .title h1 {font-size: 55px;}
 }
 
-/**/
-
-/* portfolio3 */
-@media only screen and (max-width : 860px){
-    .web figure {
-        float: none;
-        width: 100%;
-        margin-right: 0;
-    }
-    .web figcaption {
-        float: none;
-        width: 100%;
-        position:relative;
-        top: 0; left: 0;
-        transform: translateY(0);
-    }
-}
     
     
     
