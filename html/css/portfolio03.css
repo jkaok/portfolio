@@ -51,6 +51,7 @@ main .nav li a {
     font-weight: 200;
 }
 main .nav li:hover a {color: #fff;}
+
 main .nav span {
     position: relative; top:-5px;;
     display: block; 
@@ -58,8 +59,11 @@ main .nav span {
     width: 150px;
     text-align: right; 
 }
-main .nav span a{
-    font-weight: bold; font-size: 28px;
+main .nav span a {
+    color: #fff;
+    font-family: 'Raleway', sans-serif; 
+    font-weight: bold;
+    font-size: 28px;
 }
 main .nav span a:hover {opacity: 0.8;}
 
@@ -179,18 +183,18 @@ section#cont1 {
     position: relative;
     top:20px;
 }
-/* #web01 */
+/* .web -img 3개 */
 .web {
     position: relative;
-    width: 100%;
+    top: 0; left: 0;
+    width: 100%; height: auto;
     margin-top: 100px;
 }
-.web figure    {
+.web figure {
     float: left;
-    width: 60%; 
-    margin-right:3%;
+    width: 53%; 
+    margin-right:7%;
 }
-.frignt {float: right;}
 .web figure img {
     display: block; 
     width: 100%; 
@@ -200,8 +204,10 @@ section#cont1 {
 
 .web figcaption {
     float: left;
-    width: 35%; 
-    margin-top: 100px;
+    width: 40%; 
+    position:absolute;
+    top:50%; right: 0;
+    transform: translateY(-50%);
 }
 .web figcaption span {
     display: block;
@@ -221,6 +227,7 @@ section#cont1 {
 }
 .web figcaption p {
     font-size: 1em;
+    line-height: 1.7;
 }
 .web .btn {
     position: relative;
@@ -238,12 +245,11 @@ section#cont1 {
     box-shadow: inset 0 80px 0 0 #505050;
     color: #fff;
 }
-
 .web:nth-child(1){
     margin-bottom: 120px;
 }
-.web:nth-child(2){
-    margin-left: 60px;
+.web:nth-child(3){
+    margin-bottom: 100px;
 }
 
 /* footer */
@@ -269,7 +275,6 @@ footer span {
     font-weight: 200;
     font-size: 0.8em; 
 }
-
 
 
 

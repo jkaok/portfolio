@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&family=Raleway:wght@200;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&family=Raleway:wght@200&display=swap');
 
-body {overflow: hidden; }
+body {overflow: hidden; height: 100%;}
 
 /* header */
 header {
@@ -141,8 +141,8 @@ header .bars {
 }
 #side h5 {
     font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    font-size: 1.2rem;
+    font-weight: bold;
+    font-size: 1.3rem;
     color: #404040;
     margin-left: 44px;
     margin-top: 70px;
@@ -174,15 +174,17 @@ header .bars {
     color: #878787;
     transition: all 0.42s ease;
 }
-#side .sub {margin: 0;}
+#side .sub {
+    margin: 10px 0 35px 8px;
+}
 #side .sub li {
     display: inline-block;
-    padding-bottom: 10px;
 }
 
 #side .sub li a {
     font-size: 0.78rem; 
     line-height: 19px;
+    margin: 0 5px 10px 0;
 }
 #side li:hover a {
     color:#ffa700; 
@@ -204,7 +206,7 @@ header .bars {
 }
 .yellowline {
     position: absolute; 
-    right: 0; top:220px;
+    right: 0; top:213px;
     
 }
 .yellowline span {

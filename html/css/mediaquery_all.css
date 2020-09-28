@@ -1,14 +1,12 @@
 /* mediaquery */
 
+/* portfolio2 */
 @media only screen and (max-width : 980px){
-    /* portfolio2 */
     .cont1-warp .text p {font-size: 110px;}
     main .title {width: 92%;}
 }
 
-
 @media only screen and (max-width : 730px){
-    /* portfolio2 */
     .cont1-warp .text p {font-size: 90px;}
     .cont1-warp .text span {font-size: 12px;}
     .lightbox a {
@@ -20,10 +18,8 @@
     #intro p {white-space:normal;}
 }
 
-
 @media only screen and (max-width : 550px){
-    /* portfolio2 */
-    #wrap2 {height: 120%;}
+    #wrap2 {height: 125%;}
     main .title h1 {
         font-size: 65px;
         line-height: 1.2;
@@ -48,35 +44,40 @@
     .his-desc .hisp small:nth-child(1) {
         padding-left:0px;
     }
-
 }
 
-
 @media only screen and (max-width : 440px){
-    /* portfolio2 */
     main .nav {height: 42%;}
     
     .cont1-warp .text p {font-size: 60px;}
     .cont1-warp .text span {font-size: 11px;}
-    .web figure {
-        width: 100%;
-        margin-right:0%;
-    }
-    .web figcaption {
-        width: 100%;
-        margin-top: 50px;
-    }
+    
     #cont1 .three span {
         font-size: 1.4rem;
         line-height: 2.1;
     }
 }
+
 @media only screen and (max-width : 380px) {
-    /* portfolio2 */
     main .title h1 {font-size: 55px;}
-    
-    
-    
+}
+
+/**/
+
+/* portfolio3 */
+@media only screen and (max-width : 860px){
+    .web figure {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+    .web figcaption {
+        float: none;
+        width: 100%;
+        position:relative;
+        top: 0; left: 0;
+        transform: translateY(0);
+    }
 }
     
     

@@ -50,6 +50,7 @@ main .nav li a {
     font-weight: 200;
 }
 main .nav li:hover a {color: #fff;}
+
 main .nav span {
     position: relative; top:-5px;;
     display: block; 
@@ -57,8 +58,11 @@ main .nav span {
     width: 150px;
     text-align: right; 
 }
-main .nav span a{
-    font-weight: bold; font-size: 28px;
+main .nav span a {
+    color: #fff;
+    font-family: 'Raleway', sans-serif; 
+    font-weight: bold;
+    font-size: 28px;
 }
 main .nav span a:hover {opacity: 0.8;}
 
