@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+@-ms-viewport{width:device-width;}
+@-o-viewport{width:device-width;}
+@-moz-viewport{width:device-width;}
+@-webkit-viewport{width:device-width;}
+@viewport{width:device-width;}
+
+
+/* 노트북(1440~1280) */
+@media only screen and (max-width:1440px) and (min-width:1280px){
+	#margin_wrap{width:1140px;}
+
+	#gnb li{width:212px; }
+	#gnb li:nth-child(5n+1){margin-left:0;}
+	#gnb li:nth-child(6),
+	#gnb li:nth-child(7),
+	#gnb li:nth-child(8),
+	#gnb li:nth-child(9),
+	#gnb li:nth-child(10){display: none;}
+}
+
+/* 테블릿(1279~900) */
+@media only screen and (max-width:1279px) and (min-width:900px){
+	#margin_wrap{width:100%;}
+
+	#gnb li{width:24.25%; margin-left:1%; }
+
+	#gnb li:nth-child(5),
+	#gnb li:nth-child(6),
+	#gnb li:nth-child(7),
+	#gnb li:nth-child(8),
+	#gnb li:nth-child(9),
+	#gnb li:nth-child(10){display: none;}
+
+	.con li{width:33%; margin-left:0.5%; margin-top:1%;}
+	.con li:nth-child(4n+1){margin-left:0.5%;}
+	.con li:nth-child(1),
+	.con li:nth-child(2),
+	.con li:nth-child(3),
+	.con li:nth-child(4){margin-top:1%;}
+
+	.con li:nth-child(3n+1){margin-left:0;}
+}
+
+/* 모바일(899~) */
+@media only screen and (max-width:899px){ /* 899px까지. */
+	#margin_wrap{width:100%;}
+
+	#gnb li{width:49.5%; margin-left:1%; }
+	#gnb li:nth-child(4n+1){margin-left:1%;}
+	#gnb li:nth-child(2n+1){margin-left:0;}
+	#gnb li:nth-child(3),
+	#gnb li:nth-child(4),
+	#gnb li:nth-child(5),
+	#gnb li:nth-child(6),
+	#gnb li:nth-child(7),
+	#gnb li:nth-child(8),
+	#gnb li:nth-child(9),
+	#gnb li:nth-child(10){display: none;}
+	
+
+	.con li{width:49.5%; margin-left:1%; margin-top:1%;}
+	.con li:nth-child(4n+1){margin-left:1%;}
+	.con li:nth-child(1),
+	.con li:nth-child(2),
+	.con li:nth-child(3),
+	.con li:nth-child(4){margin-top:1%;}
+
+	.con li:nth-child(2n+1){margin-left:0;}
+}

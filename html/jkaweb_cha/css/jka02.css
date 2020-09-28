@@ -1,0 +1,155 @@
+@charset "UTF-8";
+/* CSS Document */
+        
+#prices_back{
+    position: relative; top:10px; 
+    height: 320px;
+    background-color: rgba(220,231,242,0.1);
+    padding: 100px 50px;
+}
+.prices {
+    width: 90%; 
+    margin:0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.price-item {
+    width: 320px; height: 325px; 
+    border: 1px solid #666;
+    border-radius: 4px;
+    margin: 16px;
+    text-align: center;
+}
+.price-item img {
+    width: 120px;  
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.price-item-title {
+    background: rgba(0,0,0,0.05);
+    text-align: center;
+    height: 55px;
+    border-bottom: 1px solid #666;
+}
+.price-item-title span {
+    display: block;
+    font-size: 1.15rem; font-weight: 600;
+    line-height: 58px;;
+    color: #243655;
+}
+.price-item-sub{
+    color: #243655;
+    padding: 30px;
+    line-height: 25px;
+}
+.price-item-button{
+    background-color: transparent;
+    color: rgba(247,132,3,1.00);
+    border-color:rgba(247,132,3,1.00); 
+    padding: 5px 25px;
+    margin-top: 10px;
+    font-size: 1.2rem; line-height: 1.5;
+    border-radius: .3rem;
+    transition: all 0.3s ease;
+}
+
+
+.price-item-button:hover {
+    background-color: rgba(247,132,3,1.00); 
+    color:white;
+}
+
+.center3{
+    font-size: 1.6em; font-weight: 700;
+    color: rgba(247,132,3,1.00); 
+    margin-top: 78px;
+    border-top: 1px rgba(143,143,144,1.00);
+}
+
+
+
+#flexbox{
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+}
+
+.flexbox-item{
+    width: 300px; height: 410px; 
+    text-align: center;
+    font-size: 1.3em;line-height: 1.7em;
+    border-left: 1px solid rgba(0,0,0,0.0); 
+}
+.flexbox-item:last-child{border-right: 1px solid rgba(0,0,0,0.0);}
+
+.img_back1{background: url("../images/img_back01.jpg");
+                background-repeat: no-repeat; opacity: 0.7;
+                background-size:100% 100%; }
+.img_back2{background: url("../images/img_back03.jpg");
+                background-repeat: no-repeat; opacity: 0.7;
+                background-size:100% 100%; }
+.img_back3{background: url("../images/img_back04.jpg");
+                background-repeat: no-repeat; opacity: 0.7;
+                background-size:100% 100%; }
+.img_back4{background: url("../images/img_back02.jpg");
+                background-repeat: no-repeat; opacity: 0.7;
+                background-size:100% 100%; }
+
+.img_back1:hover {opacity: 1;}
+.img_back2:hover {opacity: 1;}
+.img_back3:hover {opacity: 1;}
+.img_back4:hover {opacity: 1;}
+
+.p3{font-size: 1.2em;margin-top: 40px;margin-bottom: 10px;font-weight: 600;}
+.p4{font-size: 0.9em;line-height: 1.5em;font-weight: 100;}
+
+.footer1 { 
+    position: relative; top:50px;
+    background-color: #0d121b;
+    text-align: center; 
+    padding: 50px;
+    
+}
+.footer1 p {
+    color: #555d6d;
+    font-size: 0.95rem; 
+    line-height: 1.9em;
+}
+
+/*<div class=".box02 .box_banner">*/
+#include03_wrapper .box_banner_area .box02 {
+    width: 100%;
+    height: 267px;
+    margin-bottom: 15px;
+    background-image: url(/sh_img/include/include_03/img/banner02_bg.png);
+}
+#include03_wrapper .box_banner_area .box_banner {
+    position: relative;
+    box-sizing: border-box;
+    z-index: 0;
+}
+
+#include03_wrapper .box_banner_area .box_banner:before { /*나타나는 파란불투명 box*/
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 171, 255);
+    z-index: 0; /*바로 앞에 */
+    background: -webkit-linear-gradient(-45deg, rgb(0, 171, 255) 0%,rgb(22, 98, 192) 100%);
+    background: -webkit-linear-gradient(315deg, rgb(0, 171, 255) 0%,rgb(22, 98, 192) 100%);
+    background: linear-gradient(135deg, rgb(0, 171, 255) 0%,rgb(22, 98, 192) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00abff', endColorstr='#1662c0',GradientType=1);
+    opacity: 0;
+    -webkit-transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+
+
+
+
+

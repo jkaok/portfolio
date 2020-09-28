@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta name="author" content="jkaok">
+    <meta name="description" content="웹 표준을 준수한 연습용입니다.">
+    <meta name="keywords" content="웹표준, 웹접근성, 웹싸이트 만들기">
+    <meta name="generator" content="Brackets">
+    <title>@webs웹표준사이트_반응형</title>
+
+    <!--css-->
+    <link rel="stylesheet" href="css/j_reset.css">
+    <link rel="stylesheet" href="css/webstandard.css">
+    <link rel="stylesheet" href="css/webstand_mediaquery.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/lightgallery.css">
+
+    <!--웹폰트-->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="skip">
+        <a href="#cont_nav">전체 메뉴로 바로가기</a>
+        <a href="#cont_tit">타이틀 메뉴로 바로가기</a>
+        <a href="#cont_ban">배너 메뉴로 바로가기</a>
+        <a href="#cont_cont">컨텐츠 메뉴로 바로가기</a>
+    </div>
+    <!--스킵 네비게이션-->
+
+    <div id="wrap">
+        <header id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="header">
+                        <div class="header_menu">
+                            <a href="https://wtss.tistory.com/">웹디자인</a>
+                            <a href="https://www.bts.com/">퍼블리셔</a>
+                            <a href="https://google.com/">개발자</a>
+                        </div>
+                        <div class="header_tit">
+                            <h1>PROFESSIONAL PUBLISHER & DESIGNER</h1><br>
+                            <a href="www.webstoryboy.co.kr">www.webstoryboy.co.kr</a>
+                        </div>
+                        <!-- 이미지를 표현하는 방법
+                        1. img 태그로 표현(의미가 있을 때 / alt 태그 - 대체 문자 표현
+                        2. background 속성으로 표현(의미가 없을 때) - 대체 문자 X
+                        3. 이미지를 background 속성 - 웹 표준 준수하기 위해서는 
+                            가상으로 대체 문자를 만들어줌(IR 효과)
+                            이미지 스프라이트 효과
+                    -->
+                        <div class="header_icon">
+                            <a href="#" class="icon1"><i class="fa fa-html5" aria-hidden="true"></i><span>html5</span></a>
+                            <a href="#" class="icon2"><i class="fa fa-github" aria-hidden="true"></i><span>github</span></a>
+                            <a href="#" class="icon3"><i class="fa fa-facebook-square" aria-hidden="true"></i><span>facebook</span></a>
+                            <a href="#" class="icon4"><i class="fa fa-twitter-square" aria-hidden="true"></i><span>twitter</span></a>
+                        </div>
+                    </div>
+                    <!--.header-->
+                </div>
+            </div>
+        </header>
+        <!--#header-->
+
+        <nav id="nav">
+            <div class="container">
+                <h2 class="ir_su">전체 메뉴</h2>
+                <!--ir_su 효과-->
+                <div class="nav">
+                    <div>
+                        <h3>HTML Reference</h3>
+                        <ol>
+                            <li><a href="#">HTML 태그(Tag)</a></li>
+                            <li><a href="#">블록 요소/인라인 요소</a></li>
+                            <li><a href="#">DTD 선언</a></li>
+                            <li><a href="#">언어 속성 설정</a></li>
+                            <li><a href="#">HTML _title Tag</a></li>
+                            <li><a href="#">HTML _meta Tag</a></li>
+                            <li><a href="#">특수문자</a></li>
+                            <li><a href="#">하이퍼 링크</a></li>
+                            <li><a href="#">HTML _style Tag</a></li>
+                            <li><a href="#">HTML _html Tag</a></li>
+                            <li><a href="#">HTML _head Tag</a></li>
+                            <li><a href="#">HTML _div Tag</a></li>
+                            <li><a href="#">HTML _colgroup Tag</a></li>
+                            <li><a href="#">HTML _caption Tag</a></li>
+                        </ol>
+                    </div>
+                    <div>
+                        <h3>CSS Reference</h3>
+                        <ol>
+                            <li><a href="#">CSS 선택자</a></li>
+                            <li><a href="#">CSS 단위</a></li>
+                            <li><a href="#">CSS 색상</a></li>
+                            <li><a href="#">CSS 선언 방법</a></li>
+                            <li><a href="#">상대주소와 절대주소</a></li>
+                            <li><a href="#">CSS float</a></li>
+                            <li><a href="#">이미지 표현 방법</a></li>
+                            <li><a href="#">이미지 스프라이트</a></li>
+                            <li><a href="#">IR 효과</a></li>
+                            <li><a href="#">이미지 최적화</a></li>
+                            <li><a href="#">background-color</a></li>
+                            <li><a href="#">border-style</a></li>
+                            <li><a href="#">font-size</a></li>
+                            <li><a href="#">text-align</a></li>
+                        </ol>
+                    </div>
+                    <div class="last">
+                        <h3>Webstandard</h3>
+                        <ol>
+                            <li><a href="#">웹 표준</a></li>
+                            <li><a href="#">웹 접근성</a></li>
+                            <li><a href="#">W3C</a></li>
+                            <li><a href="#">웹 접근성 연구소</a></li>
+                            <li><a href="#">네이버 널리</a></li>
+                            <li><a href="#">다음 다룸</a></li>
+                            <li><a href="#">Webstandard</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <!--container-->
+        </nav>
+        <!--#nav-->
+
+        <article id="title">
+            <div class="container">
+                <div class="title">
+                    <h3>"나는 퍼블리셔다"</h3>
+                    <a href="#" class="btn">
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        <span class="ir_pm">전체메뉴</span>
+                    </a>
+                </div>
+            </div>
+        </article>
+        <!--#title-->
+
+        <main>
+            <section id="contents">
+                <div class="container">
+                    <h2 class="ir_su">반응형 사이트 컨텐츠</h2>
+                    <section id="cont_left">
+                        <h3 class="ir_su">반응형 사이트 왼쪽컨텐츠</h3>
+                        <article class="column col1">
+                            <h4>Menu</h4>
+                            <p>box-shadow를 이용한 마우스 오버효과입니다.</p>
+                           <!-- 메뉴 -->
+                            <div class="menu">
+                                <ul>
+                                    <li><a href="#">Cafe <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                                    <li><a href="#">Tutorial <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                                    <li><a href="#">WebSite <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                                    <li><a href="#">Reference <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                                    <li><a href="#">CSS3 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                                    <li><a href="#">HTML5 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                           <!-- //메뉴 -->    
+                        </article>
+                        <article class="column col2">
+                            <h4>Notice</h4>
+                            <p>게시판 영역의 한줄 효과와 두줄 효과 게시판입니다.</p>
+                           <!-- 게시판1 -->
+                            <div class="notice1">
+                                <h5>Notice1</h5>
+                                <ul>
+                                    <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
+                                    <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
+                                    <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
+                                    <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
+                                </ul>
+                                <a href="#" class="more"><i class="fa fa-plus-circle" aria-hidden="true"></i>More </a>
+                            </div>
+                           <!-- //게시판1 -->
+                           <!-- 게시판2 -->
+                            <div class="notice2 mt15">
+                                <h5>Notice2</h5>
+                                <ul>
+                                    <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
+                                    <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
+                                    <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
+                                    <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
+                                </ul>
+                                <a href="#" class="more"><i class="fa fa-plus-circle" aria-hidden="true"></i>More </a>
+                            </div>
+                            <!-- //게시판2 -->
+                        </article>
+                        <article class="column col3">
+                            <h4>Blog</h4>
+                            <p>해상도에 따라 이미지를 다르게 표현하는 방법입니다.</p>
+                            <!-- blog1-->
+                            <div class="blog1">
+                               <!--<h5>이미지1</h5>-->
+                                <figure>
+                                <!-- <img src="img/blog1_@1.jpg" class="img_normal" alt="일반 이미지1">
+                                    <img src="img/blog1_@2.jpg" class="img_retina" alt="레티나 이미지1" width="100%">
+                                -->
+                                    <img src="img/blog3_@1.jpg" srcset="img/blog3_@1.jpg 1x, img/blog3_@2.jpg 2x, img/blog3_@3.jpg 3x" alt="이미지">
+                                <!-- srcset -->
+                                    <figcaption>반응형 웹 사이트 이미지 글입니다. 디스플레이 환경에 따라 1x 2x 3x 4x </figcaption>
+                                </figure>
+                            </div>
+                            <!-- //blog1-->
+                            <!-- blog2-->
+                            <div class="blog2 mt15">
+                                <div class="img-retina">
+                                    <!--<h5>이미지1</h5>-->
+                                </div>
+                                <p>반응형 웹 사이트 이미지 글입니다. 디스플레이 환경에 따라 1x 2x 3x 4x</p>
+                            </div>
+                            <!-- //blog2-->
+                        </article>
+                    </section> <!-- //#cont_left-->
+                    
+                    <section id="cont_center">
+                        <h3 class="ir_su">반응형 사이트 가운데컨텐츠</h3>
+                        <article class="column col4">
+                            <h4>Slick Slider</h4>
+                            <p>slick.js를 이용한 이미지 슬라이드 효과입니다.</p>
+                            <!-- 이미지 슬라이드 -->
+                            <div class="slider">
+                                <div>
+                                    <figure>
+                                        <img src="img/slider001.jpg" alt="이미지1">
+                                        <figcaption>
+                                            <em>Responsive Site2</em>
+                                            <span>슬라이드 플러그인을 이용한 반응형 이미지 슬라이드 입니다.</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div>
+                                    <figure>
+                                        <img src="img/slider001.jpg" alt="이미지2">
+                                        <figcaption>
+                                            <em>Responsive Site2</em>
+                                            <span>슬라이드 플러그인을 이용한 반응형 이미지 슬라이드 입니다.</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div>
+                                    <figure>
+                                        <img src="img/slider001.jpg" alt="이미지3">
+                                        <figcaption>
+                                            <em>Responsive Site3</em>
+                                            <span>슬라이드 플러그인을 이용한 반응형 이미지 슬라이드 입니다.</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- //이미지 슬라이드 -->
+                        </article>
+                        <article class="column col5">
+                            <h4>Lightbox</h4>
+                            <p>이 곳은 설명부분입니다.</p>
+                            <div class="lightbox clearfix">
+                                <a href="img/light01.jpg"><img src="img/light01_s.jpg" alt="image01"></a>
+                                <a href="img/light02.jpg"><img src="img/light02_s.jpg" alt="image02"></a>
+                                <a href="img/light03.jpg"><img src="img/light03_s.jpg" alt="image03"></a>
+                                <a href="img/light04.jpg"><img src="img/light04_s.jpg" alt="image04"></a>
+                                <a href="img/light05.jpg"><img src="img/light05_s.jpg" alt="image05"></a>
+                                <a href="img/light06.jpg"><img src="img/light06_s.jpg" alt="image06"></a>
+                                <a href="img/light07.jpg"><img src="img/light07_s.jpg" alt="image07"></a>
+                                <a href="img/light08.jpg"><img src="img/light08_s.jpg" alt="image08"></a>
+                                <a href="img/light09.jpg"><img src="img/light09_s.jpg" alt="image09"></a>
+                                <a href="img/light10.jpg"><img src="img/light10_s.jpg" alt="image10"></a>
+                            </div>
+                        </article>
+                        <article class="column col6">
+                            <h4>Title</h4>
+                            <p>이 곳은 설명부분입니다.</p>
+                        </article>
+                    </section> <!-- //#cont_center-->
+                    
+                    <section id="cont_right">
+                        <h3 class="ir_su">반응형 사이트 오른쪽컨텐츠</h3>
+                        <article class="column col7">
+                            <h4>Title</h4>
+                            <p>이 곳은 설명부분입니다.</p>
+                        </article>
+                        <article class="column col8">
+                            <h4>Title</h4>
+                            <p>이 곳은 설명부분입니다.</p>
+                        </article>
+                        <article class="column col9">
+                            <h4>Title</h4>
+                            <p>이 곳은 설명부분입니다.</p>
+                        </article>
+                    </section> <!-- //#cont_right-->
+                </div>
+            </section>
+        </main>
+        
+        <footer id="footer">
+            <div class="container">
+                <h4>반응형 사이트 푸터</h4>
+            </div>
+        </footer>
+        <!-- #footer -->
+
+    </div>
+    <!--#wrap-->
+    
+    <script src="js/jquery.min_1.12.4.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/lightgallery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+
+    //라이트박스
+        $(".lightbox").lightGallery();
+        
+    //이미지 슬라이드    
+        $(".slider").slick({
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            arrows: true,
+            responsive: [    /* 반응형 설정도 해준다 */
+                {
+                breakpoint: 768,
+                settings: {
+                    autoplay: false, /* autoplay 끈다  */
+                    }
+                }
+            ]
+        });
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+/* mediaquery */
+
+/* 화면크기 0 ~ 1220 */
+@media (max-width : 1220px) {
+    .container {width: 100%;}
+    .row {padding-right: 10px;}
+    .title .btn {right: 10px;}
+    #contents .container {border-left:none;}
+    
+    .lightbox a {width: 24%;}
+    .lightbox a:nth-child(5n) {display: none;}
+}
+/* 화면크기 0 ~ 1024 */
+@media (max-width : 1024px) {
+    .lightbox a {width: 32.3333%;}
+    .lightbox a:nth-child(5n) {display: block;}
+    .lightbox a:nth-child(5n+1) {margin-left: 1%;}
+    .lightbox a:nth-child(10) {display: none;}
+}
+/* 화면크기 0 ~ 960 */
+@media (max-width : 960px) {
+    .nav > div {float: none;width: 100%; margin-bottom: 15px;}
+    .nav > div:last-child {width: 100%;margin-bottom: 0px;}
+    .nav > div li {width: 33.3333%;}
+    .nav > div.last ol li {width: 33.3333%;}
+
+    #cont_right {position: static; width: 100%; border-top: 1px solid #ddd;}
+    #cont_center {margin-right: 0; border-right:0;}
+}
+/* 화면크기 0 ~ 768 */
+@media (max-width : 768px) {
+    #cont_left {float: none; width: 100%;}
+    #cont_center {border-left:0;}
+    .blog2 .img-retina {height: 246px;} /* 세로값? */
+}
+/* 화면크기 0 ~ 600 */
+@media (max-width : 600px) {
+    .nav > div li {width: 50%;}
+    .nav > div.last ol li {width: 50%;}
+    
+    .header {height: auto;}
+    .header .header_tit {display: none;}
+    .header_icon {display: none;}
+    .title .btn {display: none;}
+    
+    .column.col1 h4 {display: none;}
+    .column.col1 p {display: none;}
+    .column.col1 {padding: 0;}
+    .menu li a i {display: none;}
+    .menu li {float: left; width:33.3333%; border-right: 1px solid #dbdbdb;
+        box-sizing: border-box; text-align: center;}
+    .menu li:nth-child(3n) {border-right:none;}
+    .menu a {color: #fff; text-shadow: 1px 1px 4px rgb(16, 64, 85); }
+    .menu a:hover{box-shadow: none; background: rgba(36,130,174,0.5)}
+    .menu ul {overflow: hidden;}
+    .column.col2 {background: #fff; }
+    .column.col4 {border-top: 1px solid #dbdbdb;}
+    
+    .slider figcaption em {font-size: 18px;}
+    .slider figcaption span {font-size: 16px;}
+    
+    .lightbox a {width: 49.5%;}
+    .lightbox a:nth-child(2n+1) {margin-left: 0;}
+    .lightbox a:nth-child(10) {display: block;}
+
+}
+/* 화면크기 0 ~ 480 */
+@media (max-width : 480px) {
+  
+}
+/* 화면크기 0 ~ 320 */
+@media (max-width : 320px) {
+   .lightbox a {width: 100%; margin-left: 0;}
+}
