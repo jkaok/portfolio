@@ -4,7 +4,6 @@
     /* portfolio2 */
     .cont1-warp .text p {font-size: 110px;}
     main .title {width: 92%;}
-    #intro p {white-space:pre;}
 }
 
 
@@ -18,12 +17,13 @@
         margin-right: 5%;
     }
     .lightbox a:nth-child(2n+1) {margin-left: 5%;}
+    #intro p {white-space:normal;}
 }
 
 
 @media only screen and (max-width : 550px){
     /* portfolio2 */
-    #wrap2 {height: auto;}
+    #wrap2 {height: 150%;}
     main .title h1 {
         font-size: 65px;
         line-height: 1.2;
@@ -34,11 +34,12 @@
     .fix-img h3 {font-size: 2rem;}
     
     #history .his .his-tit {
-        width: 38%;
-        font-size: 1.1rem;}
+        width: 34%;
+        font-size: 1rem;
+    }
     #history .his .his-desc {
-        width: 60%;
-        font-size: 0.9rem;
+        width: 65%;
+        font-size: 1rem;
     }
 }
 
@@ -56,6 +57,10 @@
     .web figcaption {
         width: 100%;
         margin-top: 50px;
+    }
+    #cont1 .three span {
+        font-size: 1.4rem;
+        line-height: 2.1;
     }
 }
 @media only screen and (max-width : 380px) {
