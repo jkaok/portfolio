@@ -130,7 +130,7 @@ header .bars {
 #side {
     position: fixed;
     right: 0; top:0;
-    width: 560px; height: 100%;
+    width: 560px; height:inherit;
     background-color: #fff;
     z-index: 50;
     transition: all 0.25s ease;

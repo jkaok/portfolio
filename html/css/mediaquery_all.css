@@ -1,10 +1,37 @@
 /* mediaquery */
 
 /* portfolio2 */
+@media only screen and (max-width : 1440px){
+    .word p:nth-child(1) {
+        font-size: 1.4rem; 
+        line-height: 2.2;
+        margin-bottom: 30px;
+    }
+    .word p:nth-child(2) {
+        font-size: 1.3rem; 
+        line-height: 2.2;
+    }
+    .tel {margin-top: 160px;}
+
+    #side .sub {margin: 10px 0 10px 8px;}
+    
+    main .title {top:52%;}
+    main .title p {font-size: 1.3em;}
+    
+    .cont1-warp .text {padding: 50px 0;}
+    .work_t {padding: 50px 0;}
+    
+    .margin_wrap{width: 70%;}
+    
+    #cont1 .three span small {font-size: 1.5rem;}
+    #intro p {font-size: 1.1rem;}
+    #history .his .his-tit {font-size: 1.5rem;}
+    #history .his .his-desc {font-size: 1.2rem;}
+}
+
 @media only screen and (max-width : 980px){
     .cont1-warp .text p {font-size: 110px;}
     main .title {width: 92%;}
-    
 }
 
 /* portfolio3 */
@@ -67,7 +94,7 @@
 }
 
 @media only screen and (max-width : 550px){
-    #wrap2 {height: 130%;}
+    #wrap2 {height: 140%;}
     main .title h1 {
         font-size: 65px;
         line-height: 1.2;
@@ -76,6 +103,8 @@
     main .title p {
         font-size: 0.83em;
     }
+    main .nav span a {font-size: 22px;}
+    
     .cont1-warp {margin-top: 70px;}
     .line {margin-top: 50px;}
     .work_t {margin-top: 50px;}
@@ -96,8 +125,17 @@
         padding-left:0px;
     }
     
-    .fix-img {
-        background-position: -80px 0px;
+    .fix-img02 {
+        background: url(../img/gal01.jpg)fixed center;
+        background-repeat: no-repeat;
+    }
+    .fix-img03 {
+        background: url(../img/fix-img2.jpg)fixed center;
+        background-repeat: no-repeat;
+    }
+    .fix-img04 {
+        background: url(../img/pshop/pinkship2.jpg)fixed center;
+        background-repeat: no-repeat;
     }
     
 }

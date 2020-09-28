@@ -106,7 +106,7 @@ main .title span {
     margin: 0 auto;
 }
 /* .back 어둡게 */
-.back{background:rgba(0,0,0,0.2);}
+.back{background:rgba(0,0,0,0.3);}
 
 
 /* #cont1 */
@@ -156,17 +156,17 @@ section#cont1 {
     margin-top: 77px;
 }
 /* .fix-img */
-.fix-img {
+.fix-img03 {
     width: 100%; height: 350px;
     background: url(../img/fix-img.jpg)fixed center;
     background-size: cover;
     margin-bottom: 50px;
     margin-top: 77px;
 }
-.fix-img div{
+.fix-img03 div{
     width: 100%;height: 100%;
 }
-.fix-img h3 {
+.fix-img03 h3 {
     font-size: 3rem;
     line-height: 367px;
     font-weight: 100;
