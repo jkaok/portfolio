@@ -1,21 +1,29 @@
 /* mediaquery */
 
 @media only screen and (max-width : 980px){
+    /* portfolio2 */
     .cont1-warp .text p {font-size: 110px;}
+    main .title {width: 92%;}
+    #intro p {white-space:pre;}
 }
+
+
 @media only screen and (max-width : 730px){
+    /* portfolio2 */
     .cont1-warp .text p {font-size: 90px;}
     .cont1-warp .text span {font-size: 12px;}
-    
     .lightbox a {
         width: 90%; 
         margin-left: 5%;
         margin-right: 5%;
     }
     .lightbox a:nth-child(2n+1) {margin-left: 5%;}
-
 }
+
+
 @media only screen and (max-width : 550px){
+    /* portfolio2 */
+    #wrap2 {height: auto;}
     main .title h1 {
         font-size: 65px;
         line-height: 1.2;
@@ -24,12 +32,23 @@
     .cont1-warp .text p {font-size: 75px;}
     .cont1-warp .text span {font-size: 12px;}
     .fix-img h3 {font-size: 2rem;}
+    
+    #history .his .his-tit {
+        width: 38%;
+        font-size: 1.1rem;}
+    #history .his .his-desc {
+        width: 60%;
+        font-size: 0.9rem;
+    }
 }
+
+
 @media only screen and (max-width : 440px){
+    /* portfolio2 */
+    main .nav {height: 42%;}
+    
     .cont1-warp .text p {font-size: 60px;}
     .cont1-warp .text span {font-size: 11px;}
-    
-    /* portfolio2 */
     .web figure {
         width: 100%;
         margin-right:0%;
@@ -38,6 +57,12 @@
         width: 100%;
         margin-top: 50px;
     }
+}
+@media only screen and (max-width : 380px) {
+    /* portfolio2 */
+    main .title h1 {font-size: 55px;}
+    
+    
     
 }
     

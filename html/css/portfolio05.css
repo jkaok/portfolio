@@ -152,14 +152,12 @@ section#cont1 {
 }
 
 /* #cont1 */
-#cont1 {
-    
-}
-
+#cont1 {}
 #cont1 .three {
     width: 100%; height: 170px;
-    padding-top: 130px;
+    padding-top: 130px ;
     margin-bottom: 100px;
+    
 }
 #cont1 .three span:before {
     content: '';

@@ -243,14 +243,17 @@ header .bars {
     #menu a {font-size: 4.5rem;}
     .word {top: 47%;}
 }
+
 @media only screen and (max-width : 1110px) {
     #menu a {font-size: 3.7rem;}
     .word {top: 50%;}
 }
+
 @media only screen and (max-width : 850px) {
     header nav ul {display: none;}
     .word {top: 65%;}
 }
+
 @media only screen and (max-width : 640px) {
     #menu {top:4%;}
     #menu a {font-size: 2.9rem;}
@@ -265,11 +268,13 @@ header .bars {
     line-height: 1.8;
     }
 }
+
 @media only screen and (max-width : 570px) {
     #side {width: 100%;}
 }
+
 @media only screen and (max-width : 490px) {
-    #menu {top:4.3%; margin-right: 15px;}
+    #menu {top:4.2%; margin-right: 15px;}
     #menu a {font-size: 2.2rem;}
     
     .word p:nth-child(1) {font-size: 0.86rem;}
@@ -280,6 +285,18 @@ header .bars {
     
     #side li a{font-size: 2rem; line-height: 1;}
     #side .sub li a {font-size: 0.6rem; line-height: 15px;}
+}
+
+@media only screen and (max-width : 380px) {
+    #menu a {font-size: 2rem;}
+    
+    .copyright {left: 3%;}
+    .copyright span {font-size: 0.7em;}
+    .copyright span:nth-child(1) {font-size: 0.8em;}
+    
+    #side .sub li {padding-bottom: 5px;}
+    #side li a{font-size: 1.7rem; margin: 2px;}
+    #side .sub li a {font-size: 0.6rem; line-height: 13px;}
 }
     
 
