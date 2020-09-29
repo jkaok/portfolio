@@ -101,7 +101,7 @@ body {
 #sec_1 {
     position: relative;
     width: 100%;
-    height: 730px;
+    height: 770px;
 }
 
 #con_1 {
@@ -135,6 +135,7 @@ body {
     transition: all 1s 0.5s ease;
 */
 }
+#con_1 .p_main .img2 {width: 50%;}
 #con_1 .p_main img {display: block; }
 
 .vshow {
@@ -319,7 +320,7 @@ article .ul_warp {
     
 #sec_3 {
     position:relative;
-    width: 800; height: 550px; 
+    width: 800px; height: 550px; 
     margin: 0 auto;
     padding-top: 108px;
     text-align: center;
@@ -357,7 +358,7 @@ article .ul_warp {
 .back_wrap {
     position: absolute;
     top: 0; left: 0;
-    width: 100%; height:851px;
+    width: 100%; height:891px;
     background:url("../images/photo-1475.jpg") no-repeat;
     background-size: cover;
     background-position: center top;
