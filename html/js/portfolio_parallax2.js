@@ -28,7 +28,7 @@ $(function(){
         if( wScroll >= $lightbox.eq(6).offset().top - $(window).height()/3 ){
             $lightbox.eq(6).addClass("show");
         }
-        if( wScroll >= $lightbox.eq(7).offset().top - $(window).height()/3 ){
+        if( wScroll >= $lightbox.eq(7).offset().top - $(window).height()/2 ){
             $lightbox.eq(7).addClass("show");
         }
         

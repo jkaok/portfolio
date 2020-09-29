@@ -41,7 +41,7 @@ $(function(){
         if( wScroll >= $img.eq(10).offset().top - $(window).height()/3 ){
             $img.eq(10).addClass("show");
         }
-        if( wScroll >= $img.eq(11).offset().top - $(window).height()/3 ){
+        if( wScroll >= $img.eq(11).offset().top - $(window).height()/2 ){
             $img.eq(11).addClass("show");
         }
         

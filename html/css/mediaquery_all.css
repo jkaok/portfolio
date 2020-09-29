@@ -74,6 +74,7 @@
     /* portfolio4 */
     .photo .photo-img {
         width: 100%;
+        height: auto;
         padding: 45px;
         margin-left: 0%; 
         margin-bottom: 10%;
@@ -83,13 +84,7 @@
         padding-top: 13px;
         padding-left: 44px;
     }
-    .photo-img:nth-child(2n+1) {margin-left: 0;}
-    .photo-img:nth-child(3) {margin-top: 0;}
-    .photo-img:nth-child(5) {margin-top: 0;}
-    .photo-img:nth-child(7) {margin-top: 0;}
-    .photo-img:nth-child(9) {margin-top: 0;}
-    .photo-img:nth-child(11) {margin-left: 0;}
-    
+
 }
 
 @media only screen and (max-width : 550px){
@@ -125,7 +120,7 @@
     }
     
     .fix-img02 {
-        background: url(../img/gal01.jpg)fixed center;
+        background: url(../img/book2.jpg)fixed center;
         background-repeat: no-repeat;
     }
     .fix-img03 {
@@ -136,6 +131,24 @@
         background: url(../img/pshop/pinkship2.jpg)fixed center;
         background-repeat: no-repeat;
     }
+    
+    .fix-img02 h3 {font-size: 2rem;}
+    .fix-img03 h3 {font-size: 2rem;}
+    .fix-img04 h3 {font-size: 2rem;}
+    
+    .photo-img:nth-child(2n+1) {margin-left: 0;}
+    .photo-img:nth-child(3) {margin-top: 0;}
+    .photo-img:nth-child(5) {margin-top: 0;}
+    .photo-img:nth-child(7) {margin-top: 0;}
+    .photo-img:nth-child(9) {margin-top: 0;}
+    .photo-img:nth-child(11) {margin-left: 0;}
+    .photo-img:nth-child(12) {
+        margin-left: 0; 
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .photo .photo-img {width: 100%; margin: 0;}
+    .photo .photo-img { margin-bottom: 10%;}
     
 }
 
