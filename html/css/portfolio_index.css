@@ -248,6 +248,7 @@ header .bars {
     margin-right: 4px;
 }
 
+
 /* media query */
 @media only screen and (max-width : 1200px) {
     #menu a {font-size: 4.5rem;}
@@ -281,6 +282,8 @@ header .bars {
 
 @media only screen and (max-width : 570px) {
     #side {width: 100%;}
+    #side .side_ul li a {font-size: 1.8rem;}
+    #side .side_ul .sub {margin-bottom: 11%;}
 }
 
 @media only screen and (max-width : 490px) {
@@ -293,9 +296,13 @@ header .bars {
     .copyright span {font-size: 0.8em;}
     .copyright span:nth-child(1) {font-size: 0.9em;}
     
-    #side li a{font-size: 2rem; line-height: 1;}
-    #side .sub li a {font-size: 0.6rem; line-height: 15px;}
+    #side .sub li a {
+        font-size: 0.6rem; 
+        line-height: 15px;
+    }
+
 }
+
 
 @media only screen and (max-width : 380px) {
     #menu a {font-size: 2rem;}
@@ -305,7 +312,6 @@ header .bars {
     .copyright span:nth-child(1) {font-size: 0.8em;}
     
     #side .sub li {padding-bottom: 5px;}
-    #side li a{font-size: 1.7rem; margin: 2px;}
     #side .sub li a {font-size: 0.6rem; line-height: 13px;}
 }
     
