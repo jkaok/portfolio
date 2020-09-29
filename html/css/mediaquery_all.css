@@ -1,7 +1,6 @@
 /* mediaquery */
 
-/* portfolio2 */
-@media only screen and (max-width : 1440px){
+@media only screen and (min-width : 1600px){
     .word p:nth-child(1) {
         font-size: 1.4rem; 
         line-height: 2.2;
@@ -15,7 +14,7 @@
 
     #side .sub {margin: 10px 0 10px 8px;}
     
-    main .title {top:52%;}
+    main .title {top:48%;}
     main .title p {font-size: 1.3em;}
     
     .cont1-warp .text {padding: 50px 0;}
