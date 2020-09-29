@@ -62,7 +62,7 @@
 
         <!-- #cont2 -->
         <section id="cont2">
-            <article class="cont2-warp margin_wrap">    
+            <div class="margin_wrap">
                 <div class="web clearfix">
                     <figure>
                         <img src="img/webpng01.png" alt="webpng01.png">
@@ -72,29 +72,38 @@
                         <h5>Web Standard Responsive</h5>
                         <small>웹표준 반응형 사이트</small>
                         <p class="mt30">
-                        웹표준을 준수한 사이트를 만들었습니다.<br>
-                        반응형 사이트로 여러가지 마우스 오버효과, 슬라이드, 라이트박스, 사용자의 스크린 해상도에 따른 고해상도 이미지 출력이 가능한 사이트를 구현하였습니다.
+                            웹표준을 준수한 사이트를 만들었습니다.<br>
+                            반응형 사이트로 여러가지 마우스 오버효과, 슬라이드, 라이트박스, 사용자의 스크린 해상도에 따른 고해상도 이미지 출력이 가능한 사이트를 구현하였습니다.
                         </p>
                         <a href="web-standard-responsive/web-standard-responsive.html" class="btn mt30">STIE VIEW </a>
                     </figcaption>
                 </div>
-                <div class="web clearfix">
-                    <figure>
-                        <img src="img/webpng02.png" alt="webpng02.png">
-                    </figure>
-                    <figcaption>
-                        <span></span>
-                        <h5>Web Responsive Store </h5>
-                        <small>여성의류 쇼핑몰 반응형 사이트</small>
-                        <p class="mt30">
-                       일반적인 여성의류 쇼핑몰 사이트를 만들었습니다.<br>
-                       사용자들의 환경을 고려한 심플한 UI로 의류쇼핑에 집중할 수 있는 사이트를 구현하였습니다.
-                        </p>
-                        <a href="lubme-responsive/lubme-responsive.html" class="btn mt30">STIE VIEW </a>
-                    </figcaption>
-                    
+            </div>
+            <!--//margin_wrap-->
+
+            <div class="web_warp">
+                <div class="margin_wrap">
+                    <div class="web clearfix">
+                        <figure>
+                            <img src="img/webpng02.png" alt="webpng02.png">
+                        </figure>
+                        <figcaption>
+                            <span></span>
+                            <h5>Web Responsive Store </h5>
+                            <small>여성의류 쇼핑몰 반응형 사이트</small>
+                            <p class="mt30">
+                                일반적인 여성의류 쇼핑몰 사이트를 만들었습니다.<br>
+                                사용자들의 환경을 고려한 심플한 UI로 의류쇼핑에 집중할 수 있는 사이트를 구현하였습니다.
+                            </p>
+                            <a href="lubme-responsive/lubme-responsive.html" class="btn mt30">STIE VIEW </a>
+                        </figcaption>
+                    </div>
                 </div>
-                <div class="web clearfix">
+                <!--//margin_wrap-->
+            </div>
+
+            <div class="margin_wrap">
+                <div class="web clearfix web3">
                     <figure>
                         <img src="img/webpng03.png" alt="webpng03.png">
                     </figure>
@@ -103,15 +112,16 @@
                         <h5>Resize_ FullPage Site</h5>
                         <small>Swatch FullPage 사이트</small>
                         <p class="mt30">
-                        다양한 스타일의 스와치시계 상품을 계절의 느낌과 접목시켜 fullpage 효과를 주었습니다. <br>
-                        스크린의 크기에 맞게 화면이 가득 채워져 표현되는 fullpage와 resize로 여러 디바이스환경에서도 사이트의 디자인이 제한되지 않습니다.
+                            다양한 스타일의 스와치시계 상품을 계절의 느낌과 접목시켜 fullpage 효과를 주었습니다. <br>
+                            스크린의 크기에 맞게 화면이 가득 채워져 표현되는 fullpage와 resize로 여러 디바이스환경에서도 사이트의 디자인이 제한되지 않습니다.
                         </p>
                         <a href="jkaweb_cha/jkaweb_cha.html" class="btn mt30">STIE VIEW </a>
                     </figcaption>
                 </div>
-            </article>
+            </div>
+            <!--//margin_wrap-->
         </section>
-        
+
         <!-- footer -->
         <footer>
             <strong>portfolio</strong>
@@ -122,15 +132,16 @@
     </div>
 
     <script src="js/jquery-3.4.1.js" type="text/javascript" text="javascript"></script>
+    <script src="js/portfolio_parallax3.js" type="text/javascript" text="javascript"></script>
     <script>
         $(function() {
             var window_height = $(window).height();
             $("body").css("height", window_height);
-            
-            $(window).resize(function(){ //반응형 화면 
-				var window_height = $(window).height();
-				$("body").css("height", window_height); 
-			});
+
+            $(window).resize(function() { //반응형 화면 
+                var window_height = $(window).height();
+                $("body").css("height", window_height);
+            });
 
         });
     </script>

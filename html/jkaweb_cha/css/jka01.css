@@ -1,27 +1,31 @@
 @charset "UTF-8";
 /* CSS Document */
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
-body {margin: 0;padding: 0;
-		 background-color: #f0f1f4;
-		 font-family: 'Open Sans', sans-serif;
+body {
+    margin: 0;padding: 0;
+    background-color: #f0f1f4;
+    font-family: 'Noto Sans KR', sans-serif;
 }
-#warp{
+#warp {
     width: 100vw;
     position: relative;
     margin: 0 auto;
 }
 
-.center50{position: absolute;
-				top:50%; left: 50%;
-				transform: translate(-50%, -50%);} /*완전히 center정렬!*/
+.center50 {
+    position: absolute;
+    top:50%; left: 50%;
+    transform: translate(-50%, -50%);
+} 
 
 .header {
-    position: absolute;
+    position: relative;
     top: 0; left: 0;
-    width: 100%; height:auto;
+    width: 100%; height:121px;
     padding-top: 20px;
     color:#737b8a; text-align: center;
+    box-sizing: border-box;
 }
 
 .opacity{opacity: 0.2;}
@@ -34,24 +38,39 @@ body {margin: 0;padding: 0;
     width: 100vw; height:100px;
     background-color: transparent; 
     color:#737b8a;
-    border-bottom: 1px solid rgba(140,138,138,0.8);}
+    border-bottom: 1px solid rgba(140,138,138,0.8);
+}
 
-.nav #main_logo {float: left;margin-right: 50px;
-	width: 220px; height: auto; /*border: 1px solid magenta;*/
-	position: relative; top:38px;left: 105px;
+.nav #main_logo {
+    float: left;
+    margin-right: 50px;
+	width: 220px; height: auto; 
+	position: relative; 
+    top:38px; left: 105px;
 }
 .nav #main_logo img{width: 100%; height: 100%;}
 
-.ul_main {width: 700px;height: auto; border: 0px solid cyan;
-	            position: relative;top:50px;float: right;margin-right: 100px;}
-
-.li_main {float: left;display: inline;list-style-type: none;
-		/*border: 1px solid red;*/ 
-		width: 120px;height: 40px;
+.ul_main {
+    width: 700px; height: auto; 
+    border: 0px solid cyan;
+    position: relative; top:50px;
+    float: right;
+    margin-right: 100px;
 }
-.li_main a{text-align: center;text-decoration: none;
-			font-family: 'Noto Sans KR', sans-serif;
-			color:white; font-size: 1.1em; font-weight: 400;}
+
+.li_main {
+    float: left;
+    display: inline;
+    list-style-type: none;
+    width: 120px; height: 40px;
+}
+.li_main a{
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif;
+    color:white; 
+    font-size: 1.1em; 
+    font-weight: 400;}
 
 .li_main a:focus {
     text-decoration: none;
@@ -64,25 +83,71 @@ body {margin: 0;padding: 0;
 }
 
 
-.ul_sub {list-style-type: none; display: none;
-		position: relative;top:31px;
+.ul_sub {
+    list-style-type: none; 
+    display: none;
+    position: relative;
+    top:31px;
 }
 
-.li_sub {height: 40px;padding-top: 25px;
-			border-bottom: 1.3px solid #59697B;
-			background-color:rgba(254,253,253,0.2);
+.li_sub {
+    height: 40px;
+    padding-top: 25px;
+    border-bottom: 1.3px solid #59697B;
+    background-color:rgba(254,253,253,0.2);
 }
 
-.hr {border-width:1px;color:black;opacity: 0.5;
-	display: block; z-index: 30;
-	width: 100%;}
+/* 메인글씨 */
+#sec_1 {
+    position: relative;
+    width: 100%;
+    height: 730px;
+}
+
+#con_1 {
+    position: absolute;
+    top: 130px;
+    left: 100px;
+    padding: 0;
+}
+#con_1 .h1_main {
+    position: relative;
+    font-size: 1.4rem;  
+    font-weight: 100;
+    line-height: 170%;
+    letter-spacing: -0.6px;
+    text-align: left;
+	color: #fff; 
+    padding-left: 5px; 
+    margin-bottom: 25px;
+        display: none;
+/*
+    opacity: 0;
+    transition: all 0.5s ease;
+*/
+}
+#con_1 .p_main {
+    position: relative;
+    margin-bottom: 15px;
+        display: none;
+/*
+    opacity: 0;
+    transition: all 1s 0.5s ease;
+*/
+}
+#con_1 .p_main img {display: block; }
+
+.vshow {
+    opacity: 1;
+}
+
 
 /* 모달창 */
 #share-options {
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -60%);
+    top: 40%;
+    transform: translate(-50%, -65%);
     background-color: #fff;
     text-align: center;
     padding: 15px 35px 35px 35px;
@@ -92,24 +157,22 @@ body {margin: 0;padding: 0;
     display: none;
     
 }
-
 #share-options img {
     display: inline-block;
-    margin: 30px auto;
+    margin: 25px auto;
 }
-
 #share-options .modal-close {
     display: block;
     position: absolute;
-    bottom:5%; right: 8%;
+    bottom:5%; right: 6%;
     color: #fff;
+    font-size: 0.85rem;
     border-radius: 4px;
-    padding: 8px 10px;
-    background-color: #edb5a1;
+    padding: 8px 12px 10px 12px;
+    background-color: #ef9d80;
     text-transform: uppercase;
     z-index: 300;
 }
-
 #share-options .modal-close:hover {
     background-color: #ed612f;
 }
@@ -125,7 +188,7 @@ body {margin: 0;padding: 0;
 .corner_menu:hover {
     transform: translate(-8px, 0px);
     transition: all 0.5s ease-in-out;
-                        }
+}
 .modal_btn:hover {background-color:rgba(167,201,230,0.3);}
 
 .modal_btn {
@@ -139,46 +202,28 @@ body {margin: 0;padding: 0;
 .modal_btn img {margin-top: 10px;}
 
 #share-options .modal_p {
-    font-size: 1.5em; text-align: center;font-weight: bold;
+    font-size: 1.5em; 
+    text-align: center;
+    font-weight: 500;
     color: #F08F27;
-	margin-top: 20px; margin-bottom: 15px;
+	margin-top: 15px; margin-bottom: 15px;
 }
-
 #share-options .modal_pre {
-    font-size: 1.1em; line-height: 1.8em;
+    font-size: 1.1em; 
+    line-height: 1.8em;
     color:#393738; 
     text-align: center;
     padding-bottom: 15px;
 	margin-top: 15px;
 }
 
-
-
-/*main 한영문글씨*/
-#con_1 {
-    position: absolute;
-    top:260px;
-    left: 100px;
-    padding: 0;
-    display: none;
-}
-#con_1 h1 {
-    font-size: 1.6rem;  
-    font-weight: 100;
-    line-height: 170%;
-    letter-spacing: -1.4px;
-    text-align: left;
-	color: #fff; 
-    padding-left: 5px; 
-    margin-bottom: 20px;
-}
-#con_1 .p_main {
-    margin-bottom: 15px;
+/* 3종 li */
+#sec_2 {
+    position: relative;
+    top: 0; left: 0;
+    background: yellow;
 }
 
-
-
-/*3종 div*/
 article.article {
     position: absolute; 
     bottom: 0px; 
@@ -188,11 +233,7 @@ article.article {
     z-index: 9;
 }
 
-.bottom-yellow	{position: absolute; top:755px; left:0px;
-            width: 100vw;height: 250px;z-index: 10;
-			border-bottom: 10px solid rgba(222,241,6,1.00); /*하단 노란line*/  }
-
-article ul#main_idx { 
+article .ul_warp { 
     position: absolute; 
     width: 100%; height: 300px; 
     list-style: none;
@@ -201,19 +242,19 @@ article ul#main_idx {
     align-items:flex-end;
 }
 
-#main_idx li {
+.ul_warp li {
     overflow: hidden;  
-    width:335px; 
+    width:360px; 
     margin-right: 4px;
     padding: 22px 20px; 
     box-sizing: border-box;
     text-align: left;
 }
-#main_idx li.div_01 {background:rgba(247,132,3,1.00);}
-#main_idx li.div_02 {background:rgba(222,241,6,1.00);}
-#main_idx li.div_03 {background:rgba(41,154,246,1.00);}
+.ul_warp .li01 {background:rgba(247,132,3,1.00);}
+.ul_warp .li02 {background:rgba(222,241,6,1.00);}
+.ul_warp .li03 {background:rgba(41,154,246,1.00);}
 
-#main_idx li:after{
+.ul_warp li:after{
     display: block; 
     content: '';
     position: absolute; 
@@ -223,36 +264,37 @@ article ul#main_idx {
     background-color: #fff;  
     box-sizing: border-box;
 }
-#main_idx li h4 {
-    font-size:1.4em; line-height: 170%;
+.ul_warp li h4 {
+    font-size:1.4em; 
+    line-height: 170%;
     text-indent: 85px;
-    
+    color: #fff;
 }
-#main_idx li.div_01 h4 {
+.ul_warp .li01 h4 {
 	background:url("../images/icon03.png") no-repeat;
     background-size: 45px 45px;
 	background-position: 15px -6px;
 }
-#main_idx li.div_02 h4 {
+.ul_warp .li02 h4 {
 	background:url("../images/icon04.png") no-repeat;
     background-size: 45px 45px;
 	background-position: 15px -1px;
 }
-#main_idx li.div_03 h4 {
+.ul_warp .li03 h4 {
 	background:url("../images/icon02.png") no-repeat;
 	background-size: 49px 49px;
 	background-position: 15px -5px;
 }
 
-#main_idx li.div_01 p, #main_idx li.div_02 p, #main_idx li.div_03 p {
+.ul_warp .li01 p, .ul_warp .li02 p, .ul_warp .li03 p {
     text-align: left;
     line-height: 1.6rem; 
     font-size: 1.1rem; 
     text-indent: 85px; 
+    color: #fff;
 }
-h4, p{color: #fff;}
 
-#main_idx li.div_01 #btn_1, #main_idx li.div_02 #btn_2, #main_idx li.div_03 #btn_3 {
+.li01 #btn_1, .li02 #btn_2, .li03 #btn_3 {
     margin:20px 0px 12px 80px; 
     border: none;
     background-color:#fff;
@@ -262,54 +304,62 @@ h4, p{color: #fff;}
     cursor: default; 
 }
 
-#main_idx li.div_01 #btn_1{color: rgba(247,132,3,1.00)}
-#main_idx li.div_02 #btn_2{color: rgba(222,241,6,1.00);}            
-#main_idx li.div_03 #btn_3{color: rgba(41,154,246,1.00);}
+.li01 #btn_1{color: rgba(247,132,3,1.00);}
+.li02 #btn_2{color: rgba(222,241,6,1.00);}            
+.li03 #btn_3{color: rgba(41,154,246,1.00);}
 
 
 
 /*하단 4개 상자들*/
-.aside {width: 100%;height: 400px;
-            position: relative;top:0;
-            background: #fff;}
+.aside {
+    width: 100%;height: 400px;
+    position: relative;
+    top:0;
+    background: #fff;}
     
-#sec_3{
+#sec_3 {
     position:relative;
     width: 800; height: 550px; 
     margin: 0 auto;
     padding-top: 108px;
     text-align: center;
 }
-#sec_3 .flex_p1{
-    font-size: 3em; line-height: 2.2em;
-    font-weight: 800; text-align: center;
-    color:rgba(58,59,59,1.00);
+#sec_3 .flex_p1 {
+    font-size: 3em; 
+    line-height: 2.2em;
+    font-weight: 600;
+    text-align: center;
+    color:rgba(58,59,59,0.86);
 }
-#sec_3 .p2{font-size: 1.3em;line-height: 1.7em; font-weight: 200;margin-top: 22px;}
+#sec_3 .pp02 {
+    font-size: 1.2em;
+    line-height: 1.7em; 
+    font-weight: 300;
+    margin-top: 22px;
+}
+
+#sec_3 .pp02 .p03 {
+    font-size: 1.6em; 
+    font-weight: 500;
+    color: rgba(247,132,3,1.00); 
+    margin-top: 78px;
+    border-top: 1px rgba(143,143,144,1.00);
+}
+#sec_3 .pp02 .p04{
+    font-size: 1.4em;
+    line-height: 1.7em; 
+    font-weight: 300;
+    margin-top: 30px;
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-#sec_1 {
-    position: relative;
+.back_wrap {
+    position: absolute;
     top: 0; left: 0;
-    width: 100%; height:880px;
+    width: 100%; height:851px;
     background:url("../images/photo-1475.jpg") no-repeat;
     background-size: cover;
     background-position: center top;
     z-index: -1;
-}
-
-#sec_2 {
-    position: relative;
-    top: 0px; left: 0;
 }
