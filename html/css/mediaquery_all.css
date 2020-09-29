@@ -2,13 +2,13 @@
 
 @media only screen and (min-width : 1600px){
     .word p:nth-child(1) {
-        font-size: 1.4rem; 
-        line-height: 2.2;
+        font-size: 2rem; 
+        line-height: 2.4;
         margin-bottom: 30px;
     }
     .word p:nth-child(2) {
-        font-size: 1.3rem; 
-        line-height: 2.2;
+        font-size: 1.7rem; 
+        line-height: 2.4;
     }
     .tel {margin-top: 160px;}
 

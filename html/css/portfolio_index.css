@@ -81,12 +81,12 @@ header .bars {
     font-style: italic;
 }
 .word p:nth-child(1) {
-    font-size: 1.05rem; 
+    font-size: 1.1rem; 
     line-height: 1.9;
     margin-bottom: 22px;
 }
 .word p:nth-child(2) {
-    font-size: 1.15rem; 
+    font-size: 1.2rem; 
     line-height: 1.9;
 }
 
