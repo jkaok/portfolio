@@ -79,7 +79,6 @@ main .title h1 {
     font-weight: 200;
     font-size: 74px; 
     text-transform: uppercase;
-    line-height: 100px; 
 }
 main .title h2 {
     font-size: 30px; color: pink;

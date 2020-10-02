@@ -186,7 +186,19 @@ header .bars {
 }
 #side .side_ul .sub li {
     display: inline-block;
+    position: relative;
 }
+
+
+
+#side .side_ul .sub:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 18px;right: 0;
+    width: 65px; height: 1px;
+    background-color: #ffa700; 
+    }
 
 #side .side_ul .sub li a {
     font-size: 0.78rem; 
@@ -214,14 +226,15 @@ header .bars {
 }
 #side .yellowline {
     position: absolute; 
-    right: 0; top:213px;
+    right: 0; top:25%;
     
 }
 #side .yellowline span {
     display: block;
     width: 65px; height: 1px;
     background-color: #ffa700;
-    margin-bottom: 160%;
+    padding-bottom: 200x;
+    margin-bottom: 5%;
 }
 
 /* .copyright */
@@ -283,7 +296,7 @@ header .bars {
 @media only screen and (max-width : 570px) {
     #side {width: 100%;}
     #side .side_ul li a {font-size: 1.8rem;}
-    #side .side_ul .sub {margin-bottom: 11%;}
+    #side .side_ul .sub {margin-bottom: 5%;}
 }
 
 @media only screen and (max-width : 490px) {
@@ -312,6 +325,7 @@ header .bars {
     .copyright span:nth-child(1) {font-size: 0.8em;}
     
     #side .sub li {padding-bottom: 5px;}
+   
     #side .sub li a {font-size: 0.6rem; line-height: 13px;}
 }
     

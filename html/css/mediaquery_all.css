@@ -20,7 +20,7 @@
     .cont1-warp .text {padding: 50px 0;}
     .work_t {padding: 50px 0;}
     
-    .margin_wrap{width: 70%;}
+    .margin_wrap{width: 80%;}
     
     #cont1 .three span small {font-size: 1.5rem;}
     #intro p {font-size: 1.1rem;}
@@ -53,6 +53,16 @@
     #cont1 .three span {font-size: 1.5rem;}
 }
 
+@media only screen and (max-width : 820px) and (max-height : 770px){
+    main {height: 120%;}
+}
+
+@media only screen and (max-width : 720px){
+   main .title h1 {
+    line-height: 1; margin-bottom: 5px;
+    } 
+}
+
 @media only screen and (max-width : 730px){
     .cont1-warp .text p {font-size: 90px;}
     .cont1-warp .text span {font-size: 12px;}
@@ -64,10 +74,14 @@
     .lightbox a:nth-child(2n+1) {margin-left: 5%;}
     
     #intro {
-        padding: 80px 20px 50px 20px;
+        padding: 80px 5px 50px 5px;
         box-sizing: border-box;
     }
-    #intro p {white-space:normal; margin-top: 50px;}
+    #intro p {
+        white-space:normal; 
+        margin-top: 50px;
+        text-align: left;
+    }
     
     #cont1 .three {padding-bottom: 60px;}
     
@@ -88,15 +102,12 @@
 }
 
 @media only screen and (max-width : 550px){
-    #wrap2 {height: 140%;}
-    main .title h1 {
-        font-size: 65px;
-        line-height: 1.2;
-        margin-bottom: 10px;
-    }
+    main {height: 120%;}
+   
     main .title p {
         font-size: 0.83em;
     }
+    
     main .nav span a {font-size: 22px;}
     
     .cont1-warp {margin-top: 70px;}
@@ -154,15 +165,19 @@
 
 @media only screen and (max-width : 440px){
     main .nav {height: 42%;}
+    main .title span {font-size: 0.85em;}
     
     .cont1-warp .text p {font-size: 60px;}
-    .cont1-warp .text span {font-size: 11px;}
+    .cont1-warp .text span {font-size: 9px;}
     
     #cont1 .three span {
         font-size: 1.4rem;
         line-height: 2.1;
     }
-    #cont1 .three span small {white-space: pre-wrap;}
+    #cont1 .three span small {
+        font-size: 1rem; 
+        white-space: pre-wrap;
+    }
 }
 
 @media only screen and (max-width : 380px) {
