@@ -53,6 +53,19 @@
     .web:nth-child(2) figcaption {margin-top: 0px;}
     
     #cont1 .three span {font-size: 1.5rem;}
+    
+    .fix-img02 {
+        background-position: center;
+        background-size:contain;
+    }
+    .fix-img03 {
+        background-position: center;
+        background-size:contain;
+    }
+    .fix-img04 {
+        background-position: center;
+        background-size:contain;
+    }
 }
 
 @media only screen and (max-width : 730px){
