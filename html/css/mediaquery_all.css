@@ -35,6 +35,8 @@
 
 /* portfolio3 */
 @media only screen and (max-width : 860px){
+    main .title p {font-size: 0.9em;}
+    
     .web figure {
         float: none;
         width: 100%;
@@ -53,17 +55,9 @@
     #cont1 .three span {font-size: 1.5rem;}
 }
 
-@media only screen and (max-width : 820px) and (max-height : 770px){
-    main {height: 120%;}
-}
-
-@media only screen and (max-width : 720px){
-   main .title h1 {
-    line-height: 1; margin-bottom: 5px;
-    } 
-}
-
 @media only screen and (max-width : 730px){
+    main {height: 120%;} /* 120% */
+   
     .cont1-warp .text p {font-size: 90px;}
     .cont1-warp .text span {font-size: 12px;}
     .lightbox a {
@@ -88,8 +82,7 @@
     /* portfolio4 */
     .photo .photo-img {
         width: 100%;
-        height: auto;
-        padding: 45px;
+        height: 100%;
         margin-left: 0%; 
         margin-bottom: 10%;
     }
@@ -102,10 +95,9 @@
 }
 
 @media only screen and (max-width : 550px){
-    main {height: 120%;}
-   
     main .title p {
-        font-size: 0.83em;
+        font-size: 0.8em;
+        line-height: 1.7;
     }
     
     main .nav span a {font-size: 22px;}
@@ -130,22 +122,9 @@
         padding-left:0px;
     }
     
-    .fix-img02 {
-        background: url(../img/book2.jpg)fixed center;
-        background-repeat: no-repeat;
-    }
-    .fix-img03 {
-        background: url(../img/fix-img2.jpg)fixed center;
-        background-repeat: no-repeat;
-    }
-    .fix-img04 {
-        background: url(../img/pshop/pinkship2.jpg)fixed center;
-        background-repeat: no-repeat;
-    }
-    
-    .fix-img02 h3 {font-size: 2rem;}
-    .fix-img03 h3 {font-size: 2rem;}
-    .fix-img04 h3 {font-size: 2rem;}
+    .fix-img02 h3 {font-size: 1.9rem;}
+    .fix-img03 h3 {font-size: 1.9rem;}
+    .fix-img04 h3 {font-size: 2.1rem;}
     
     .photo-img:nth-child(2n+1) {margin-left: 0;}
     .photo-img:nth-child(3) {margin-top: 0;}
@@ -158,16 +137,17 @@
         margin-top: 0;
         margin-bottom: 0;
     }
-    .photo .photo-img {width: 100%; margin: 0;}
-    .photo .photo-img { margin-bottom: 10%;}
-    
+    .photo .photo-img {
+        padding: 41px;
+    }
 }
 
 @media only screen and (max-width : 440px){
     main .nav {height: 42%;}
+    main .title h1 {font-size: 55px;}
     main .title span {font-size: 0.85em;}
     
-    .cont1-warp .text p {font-size: 60px;}
+    .cont1-warp .text p {font-size: 53px;}
     .cont1-warp .text span {font-size: 9px;}
     
     #cont1 .three span {
@@ -180,9 +160,6 @@
     }
 }
 
-@media only screen and (max-width : 380px) {
-    main .title h1 {font-size: 55px;}
-}
 
     
     
