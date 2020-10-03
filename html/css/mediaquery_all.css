@@ -55,16 +55,23 @@
     #cont1 .three span {font-size: 1.5rem;}
     
     .fix-img02 {
-        background-position: center;
-        background-size:contain;
+        background-attachment:scroll;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100% 100%;
+        
     }
     .fix-img03 {
-        background-position: center;
-        background-size:contain;
+        background-attachment:scroll;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100% 100%;
     }
     .fix-img04 {
-        background-position: center;
-        background-size:contain;
+        background-attachment:scroll;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100% 100%;
     }
 }
 
