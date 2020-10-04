@@ -78,6 +78,7 @@ body {
     background-color: rgba(220,231,242,0.1);
     padding: 100px 50px;
     letter-spacing: -1px; 
+    margin-bottom: 15px;
 }
 .prices {
     width: 1200px; 

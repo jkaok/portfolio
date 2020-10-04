@@ -9,6 +9,7 @@
     .ul_warp li h4 {
         font-size:1em;
         padding: 5px 0;
+        text-indent: 65px;
     }
     .li01 #btn_1, .li02 #btn_2, .li03 #btn_3 {
         font-size: 1em;
@@ -27,13 +28,22 @@
     #flexbox {flex-wrap: wrap;}
     .flexbox-item {width: 47%;}
     
-    #prices_back{height: auto;}
+    #prices_back{
+        height: auto;
+        padding: 0px;
+        margin-top: 50px;
+    }
     .prices {
         width: 100%;
         flex-wrap: wrap;
         justify-content:center;
     }
-    .price-item {width: 42%;}
+    .price-item {width: 35%;margin: 25px;}
+    .price-item-title span {font-size: 0.95rem;}
+    .price-item-sub{
+        font-size: 0.9rem;
+        padding: 30px 10px;
+    }
 }
 
 
@@ -54,7 +64,7 @@
     .ul_warp .li01 p, .ul_warp .li02 p, .ul_warp .li03 p {display: none;}
     
     .li01 #btn_1, .li02 #btn_2, .li03 #btn_3 {
-        font-size: 0.8em;
+        font-size: 0.7em;
         margin: 0;
         padding: 5px;
     }
@@ -71,13 +81,25 @@
     
     #sec_3 .pp02 .p04{font-size: 1.1em;line-height: 2;}
     
-    #flexbox {flex-wrap: wrap;}
-    .flexbox-item {width: 90%;}
+    /*.flexbox-item {width: 90%;}*/
+    .flexbox-item .p3 {font-size: 0.9em;}
+    .flexbox-item .p4{font-size: 0.7em;}
     
     #prices_back{height: auto;}
+    .price-item {width: 43%;margin: 6px;}
     
-    .price-item {width: 90%;}
+}
+
+@media only screen and (max-width : 380px){
+    #sec_3 .flex_p1 {font-size: 1.2em;}
+    #sec_3 .pp02 {font-size: 0.8em;}
+    #sec_3 .pp02 .p04{font-size: 0.9em;}
     
+    .flexbox-item .p3 {font-size: 0.7em;}
+    .flexbox-item .p4{font-size: 0.6em;}
+    
+    .price-item-title span {font-size: 0.85rem;}
+    .price-item-sub{font-size: 0.8rem;}
 }
 
 
