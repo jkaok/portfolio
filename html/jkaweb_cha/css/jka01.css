@@ -260,8 +260,8 @@ article .ul_warp {
     content: '';
     position: absolute; 
     bottom:0; left:20; 
-    width:295px; height: 4px; 
-    z-index: 15;
+    width:35%; height: 4px; 
+    z-index: 50;
     background-color: #fff;  
     box-sizing: border-box;
 }

@@ -59,7 +59,7 @@
     #con_1 .p_main img {
         width: 90%;
     }
-    
+    .ul_warp li:after{width:20%;}
     .ul_warp .li01 h4, .ul_warp .li02 h4, .ul_warp .li03 h4,
     .ul_warp .li01 p, .ul_warp .li02 p, .ul_warp .li03 p {display: none;}
     
@@ -73,21 +73,28 @@
     #sec_1 {height: 570px;}
     
     #sec_3 {
-        margin: 0 auto;
         width: 90%;
+        padding-top: 68px;
+        height: 450px;
     }
     #sec_3 .flex_p1 {font-size: 1.4em;}
     #sec_3 .pp02 {font-size: 0.9em;}
     
     #sec_3 .pp02 .p04{font-size: 1.1em;line-height: 2;}
     
-    /*.flexbox-item {width: 90%;}*/
+    .flexbox-item {height: 300px;}
     .flexbox-item .p3 {font-size: 0.9em;}
     .flexbox-item .p4{font-size: 0.7em;}
     
     #prices_back{height: auto;}
-    .price-item {width: 43%;margin: 6px;}
-    
+    .price-item {
+        width: 43%;
+        height: 300px; 
+        margin: 10px;
+    }
+    .price-item-sub{
+        padding: 20px;
+    }
 }
 
 @media only screen and (max-width : 380px){
@@ -100,6 +107,10 @@
     
     .price-item-title span {font-size: 0.85rem;}
     .price-item-sub{font-size: 0.8rem;}
+    
+    .nav #main_logo {
+        left: 75px;
+    }
 }
 
 
