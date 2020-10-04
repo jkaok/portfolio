@@ -75,10 +75,9 @@
     #sec_3 {
         width: 90%;
         padding-top: 68px;
-        height: 450px;
     }
     #sec_3 .flex_p1 {font-size: 1.4em;}
-    #sec_3 .pp02 {font-size: 0.9em;}
+    #sec_3 .pp02 {font-size: 1em;line-height: 2;}
     
     #sec_3 .pp02 .p04{font-size: 1.1em;line-height: 2;}
     
