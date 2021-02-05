@@ -146,6 +146,9 @@ header .bars {
   opacity: 1;
   transform: translateX(0%);
 }
+#menu a > em {
+  font-weight: bold;
+}
 
 /* side 메뉴 */
 #side {
