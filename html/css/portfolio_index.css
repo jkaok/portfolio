@@ -147,7 +147,8 @@ header .bars {
   transform: translateX(0%);
 }
 #menu a > em {
-  font-weight: bold;
+  font-weight: 500;
+  font-style: normal;
 }
 
 /* side 메뉴 */
