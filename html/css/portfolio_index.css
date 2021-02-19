@@ -65,6 +65,7 @@ header .bars {
   background-size: cover;
   background-position: center;
   filter: saturate(150%) brightness(86%);
+  transition: all 0.6s;
 }
 .slidelist div.backimg1 {
   background-image: url(../img/back001.jpg);
@@ -77,6 +78,35 @@ header .bars {
   background-image: url(../img/back003.jpg);
   display: none;
 }
+
+
+/* Swiper */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+.backimg1 {
+  background-image: url(../img/back001.jpg);
+}
+.backimg2 {
+  background-image: url(../img/back002.jpg);
+}
+.backimg3 {
+  background-image: url(../img/back003.jpg);
+}
+.swiper-container-vertical>.swiper-pagination-bullets {
+  left: 20px;
+}
+.swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
+  opacity: 0.4;
+  margin: 15px 0;
+  width: 10px; height: 10px;
+}
+
 /* 명언 */
 .word {
   position: fixed;
@@ -90,7 +120,9 @@ header .bars {
   position: absolute;
   left: 0;
   top: 0;
+  transition: all 0.3s;
 }
+.word div.text2, .word div.text3 {display: none;}
 .word p {
   color: rgba(255, 255, 255, 0.6);
   font-style: italic;
@@ -147,7 +179,7 @@ header .bars {
   transform: translateX(0%);
 }
 #menu a > em {
-  font-weight: 500;
+  font-weight: 200;
   font-style: normal;
 }
 
@@ -204,8 +236,7 @@ header .bars {
   position: relative;
   display: block;
   width: 100%;
-
-  font-size: 2.3rem;
+  font-size: 2.1rem;
   line-height: 1.3;
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;

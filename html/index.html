@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/j_reset.css" />
     <link rel="stylesheet" href="css/portfolio_index.css" />
     <link rel="stylesheet" href="css/font-awesome.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
 </head>
 
@@ -34,23 +36,70 @@
     <!--#menu-->
     <div id="menu">
         <ul>
-            <li><a href="portfolio2.html"><em>Editorial</em>Design</a></li>
-            <li><a href="portfolio3.html"><em>WebDesign</em></a></li>
-            <li><a href="portfolio4.html"><em>GraphicEdit</em></a></li>
+            <li><a href="portfolio2.html"><em>Editorial </em>Design</a></li>
+            <li><a href="portfolio3.html"><em>Web Publishing</em></a></li>
+            <li><a href="portfolio4.html"><em>Graphic Edit</em></a></li>
             <li><a href="portfolio5.html"><em>About</em></a></li>
         </ul>
     </div>
 
     <!-- slidelist -->
     <div id="wrap">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide backimg1"></div>
+                <div class="swiper-slide backimg2"></div>
+                <div class="swiper-slide backimg3"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination swiper-pagination-white"></div>
+        <!-- Add Arrows -->
+        </div>
+
+
         <div class="slidelist">
-            <div class="backimg1"></div>
-            <div class="backimg2"></div>
-            <div class="backimg3"></div>
+            <div class="word">
+                <div class="text1">
+                    <p>
+                    "Iron rusts from disuse; stagnant water loses its purity ... <br>even so does inaction sap the vigor of the mind."<br>
+                    - Leonardo da Vinci <small>(레오나르도 다 빈치)</small>
+                    </p>
+    
+                    <p>
+                    "쇠는 안 쓰면 녹슬고 고여 있는 물은 흐려지며 <br>게으름은 정신의 활력을 앗아간다."
+                    </p>
+                </div>
+            </div>
+            <div class="word">
+                <div class="text2">
+                    <p>
+                    "We have no more right to consume happiness without <br>producing it than to consume wealth without producing it." <br>
+                    - George Bernard Shaw <small>(조지 버나드 쇼)</small>
+                    </p>
+    
+                    <p>
+                    "재물을 스스로 만들지 않는 사람에게는 쓸 권리가 없듯이 <br>행복도 스스로 만들지 않는 사람에게는 누릴 권리가 없다."
+                    </p>
+                </div>
+            </div>
+            <div class="word">
+                <div class="text3">
+                    <p>
+                    "3 O'clock is always too early for anything you want to do."<br>
+                    - Jean_Paul Sartre <small>(장 폴 사르트르)</small>
+                    </p>
+                    
+                    <p>
+                    "3시는 하고 싶은 일을 시작하기에는 <br>언제나 너무 이른 때이다."
+                    </p>
+                </div>
+            </div>
         </div>
         <!-- word -->
-        <div class="word">
-            <div>
+
+        <!-- <div class="word">
+            <div class="text1">
                 <p>
                 "Iron rusts from disuse; stagnant water loses its purity ... <br>even so does inaction sap the vigor of the mind."<br>
                 - Leonardo da Vinci <small>(레오나르도 다 빈치)</small>
@@ -60,7 +109,7 @@
                 "쇠는 안 쓰면 녹슬고 고여 있는 물은 흐려지며 <br>게으름은 정신의 활력을 앗아간다."
                 </p>
             </div>
-            <div>
+            <div class="text2">
                 <p>
                 "We have no more right to consume happiness without <br>producing it than to consume wealth without producing it." <br>
                 - George Bernard Shaw <small>(조지 버나드 쇼)</small>
@@ -70,7 +119,7 @@
                 "재물을 스스로 만들지 않는 사람에게는 쓸 권리가 없듯이 <br>행복도 스스로 만들지 않는 사람에게는 누릴 권리가 없다."
                 </p>
             </div>
-            <div>
+            <div  class="text3">
                 <p>
                 "3 O'clock is always too early for anything you want to do."<br>
                 - Jean_Paul Sartre <small>(장 폴 사르트르)</small>
@@ -80,7 +129,7 @@
                 "3시는 하고 싶은 일을 시작하기에는 <br>언제나 너무 이른 때이다."
                 </p>
             </div>
-        </div>
+        </div> -->
     </div>
 
     <!-- side 메뉴 -->
@@ -93,7 +142,7 @@
                     <li><a href="#">Project _ 8ea</a></li>
                 </ul>
             </li>
-            <li><a href="portfolio3.html">Web Design</a>
+            <li><a href="portfolio3.html">Web Publishing</a>
                 <ul class="sub">
                     <li><a href="#">web project _ 4ea</a></li>
                 </ul>
@@ -134,8 +183,12 @@
     </div>
     <!-- //하단 copyright -->
 
+
+
+
     <!-- 스크립트 -->
     <script src="js/jquery-3.4.1.js" type="text/javascript" text="javascript"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         $(function() {
             var window_height = $(window).height();
