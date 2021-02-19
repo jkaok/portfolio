@@ -8,13 +8,13 @@ $(function(){
     $(window).scroll(function(){
         var wScroll = $(this).scrollTop();
         
-        if( wScroll >= $img.offset().top - $(window).height()/3 ){
+        if( wScroll >= $img.offset().top - $(window).height()/2 ){
             $img.eq(0).addClass("show");
         }
-        if( wScroll >= $img.eq(1).offset().top - $(window).height()/3 ){
+        if( wScroll >= $img.eq(1).offset().top - $(window).height()/2 ){
             $img.eq(1).addClass("show");
         }
-        if( wScroll >= $img.eq(2).offset().top - $(window).height()/3 ){
+        if( wScroll >= $img.eq(2).offset().top - $(window).height()/2 ){
             $img.eq(2).addClass("show");
         }
         

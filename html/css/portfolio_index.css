@@ -86,6 +86,7 @@ header .bars {
   height: 100%;
 }
 .swiper-slide {
+  position: relative;
   background-position: center;
   background-size: cover;
 }
@@ -107,8 +108,41 @@ header .bars {
   width: 10px; height: 10px;
 }
 
+/* 명언 텍스트 나타나기 */
+
+.swiper-wrapper .swiper-slide-active .text {
+  /* 나타나기 */
+  opacity: 1;
+  transform: translateX(0px);
+}
+.swiper-wrapper .text {
+  position: absolute;
+  left: 3%;
+  top: 68%;
+  width: 550px; 
+  /* 숨겨두기 */
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all 0.6s;
+}
+.text ._p1 {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  margin-bottom: 22px;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+}
+.text ._p2 {
+  font-size: 1.2rem;
+  line-height: 1.9;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+  /* 나타나기:지연하기 */
+  transition-delay: 600s;
+}
+
 /* 명언 */
-.word {
+/* .word {
   position: fixed;
   left: 3%;
   top: 39%;
@@ -135,7 +169,7 @@ header .bars {
 .word p:nth-child(2) {
   font-size: 1.2rem;
   line-height: 1.9;
-}
+} */
 
 /* #menu */
 #menu {
