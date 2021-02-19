@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-attachment</title>
+
+    <link rel="stylesheet" href="../css/j_reset.css">
+    <link rel="stylesheet" href="bg-attachment.css">
+
+    
+</head>
+<body>
+    <nav class="nav">
+        <ul class="nav_ul">
+            <li class="nav_li on"><a href="#section1">Publisher</a></li>
+            <li class="nav_li"><a href="#section2">Edior</a></li>
+            <li class="nav_li"><a href="#section3">Graphic</a></li>
+            <li class="nav_li"><a href="#section4">About</a></li>
+        </ul>
+    </nav>
+    <div class="menu">
+        <ul class="nav_ul">
+            <li class="nav_li on"><a href="#section1">Publisher</a></li>
+            <li class="nav_li"><a href="#section2">Edior</a></li>
+            <li class="nav_li"><a href="#section3">Graphic</a></li>
+            <li class="nav_li"><a href="#section4">About</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <section class="common _bg1" id="section1">
+            <div class="text">
+                <span class="title">Web Publishing</span>
+                <span class="desc">Think tank che esplora le trasformazioni politiche e sociali dell'est Europa.</span>
+            </div>
+        </section>
+        <section class="common _bg2" id="section2">
+            <div class="text">
+                <span class="title">Editorial Design</span>
+                <span class="desc">Think tank che esplora le trasformazioni politiche e sociali dell'est Europa.</span>
+            </div>
+        </section>
+        <section class="common _bg3" id="section3">
+            <div class="text">
+                <span class="title">Graphic Edit</span>
+                <span class="desc">Think tank che esplora le trasformazioni politiche e sociali dell'est Europa.</span>
+            </div>
+        </section>
+        <section class="common _bg4" id="section4">
+            <div class="text">
+                <span class="title">About</span>
+                <span class="desc">Think tank che esplora le trasformazioni politiche e sociali dell'est Europa.</span>
+            </div>
+        </section>
+    </div>
+
+    <script type="text/javascript" src="../js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        var Nav = $(".nav ul li");
+        var Manu = $(".menu ul li");
+        var Cont = $(".content > section");
+
+        /* 메뉴 클릭하면, 메뉴에 클래스 주기 / #링크로 에니메이션효과로 넘기기 */
+        Nav.click(function(e){
+            e.preventDefault();
+
+            if( $(this).hasClass("on")){
+                $(this).removeClass("on");
+            }else{
+                Nav.removeClass("on");
+                $(this).addClass("on");
+            }
+
+            var Target = $(this);
+            var Index = Target.index();
+            var Section = Cont.eq(Index);
+            var Offset = Section.offset().top;
+
+            $("html,body").animate({ scrollTop:Offset }, 600, "easeInOutQuad");
+
+        });
+
+        /* 스크롤시 메뉴:보이기/가리기 */
+        $(window).scroll(function(){
+            var wScroll = $(this).scrollTop();
+            var Nav = $(".nav ul li");
+            var Manu = $(".menu ul li");
+            var Cont = $(".content > section");
+            
+            /* 메뉴 보이기/가리기 & 최상단일때 메뉴바 다른거 보이기 */
+            if( wScroll > 200){
+                $(".nav").addClass("ON");
+                $(".menu").addClass("OFF");
+            }else if( wScroll == 0 ){
+                $(".nav").removeClass("ON");
+                $(".menu").removeClass("OFF");
+            } 
+
+            /* 스크롤 위치값에따라 메뉴CSS 적용하기 */
+            if( wScroll >= Cont.eq(0).offset().top ){
+                Nav.removeClass("on");
+                Manu.removeClass("on");
+                Nav.eq(0).addClass("on");
+                Manu.eq(0).addClass("on");
+
+            }if( wScroll >= Cont.eq(1).offset().top ){
+                Nav.removeClass("on");
+                Manu.removeClass("on");
+                Nav.eq(1).addClass("on");
+                Manu.eq(1).addClass("on");
+
+            }if( wScroll >= Cont.eq(2).offset().top ){
+                Nav.removeClass("on");
+                Manu.removeClass("on");
+                Nav.eq(2).addClass("on");
+                Manu.eq(2).addClass("on");
+
+            }if( wScroll >= Cont.eq(3).offset().top ){
+                Nav.removeClass("on");
+                Manu.removeClass("on");
+                Nav.eq(3).addClass("on");
+                Manu.eq(3).addClass("on");
+            }
+        });
+
+    });
+    </script>
+    
+</body>
+</html>

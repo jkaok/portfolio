@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+body {
+    /* height: 100vh; */
+}
+/* nav */
+.nav {
+    position: absolute; top: -60px; left: 0;
+    width: 100%; height: 60px;
+    /* background: rgba(255,255,255,0.2); */
+    /* background: linear-gradient(rgba(0,0,0,0.9), rgba(139, 53, 53, 0));  */
+    background-color: #fff;
+    z-index: 15;
+    overflow: hidden;
+    transition:all 0.3s;
+}
+.nav.ON {
+    position: fixed; top: 0;
+}
+
+.menu {
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 60px;
+    border-bottom:1px solid rgba(255,255,255,0.3);
+    z-index: 14;
+    transition: all 0.2s;
+}
+.menu.OFF {
+    top: -60px;
+}
+
+.nav_ul {
+    position: absolute; right: 0;
+    width: 40%; 
+    min-width: 380px;
+    /* border:1px solid red; */
+    text-align: right;
+    padding-right: 20px;
+}
+.nav_li {
+    display: inline-block;
+    padding: 0 20px;
+    text-align: center;
+}
+.nav_li a {
+    display: block;
+    line-height: 60px;
+    transition: all 0.15s;
+
+}
+.nav_li.on a {
+    font-weight: bold; font-size: 1.1em; 
+    color:yellow;
+}
+
+.nav .nav_li a {
+    color:#333;
+}
+
+
+/* background */
+.content {position: relative; height: auto;}
+.common {
+    position: relative; top: 0;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed; /* -attachment */
+    z-index: 0;
+}
+.common._bg1 {background-image: url(../img/back001.jpg);}
+.common._bg2 {background-image: url(../img/back002.jpg);}
+.common._bg3 {background-image: url(../img/back003.jpg);}
+.common._bg4 {background-image: url(../img/macbook1.jpg);}
+
+.text {
+    max-width: 500px;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform:translate(-50%, -50%);
+    text-align: center;
+    color:#fff;
+    z-index: 1;
+}
+.text::after {
+    content:"";
+    display: block;
+    position: absolute;
+    left: 50%; top: 62%;
+    transform:translate(-50%, -50%);
+    width: 80px; height: 1px;
+    background-color: #fff;
+}
+.text .title {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px; 
+}
+
+.text .desc {
+    display: block;
+    font-size: 13px;
+    font-weight: 200; 
+}

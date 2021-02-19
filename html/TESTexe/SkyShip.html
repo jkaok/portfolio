@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하늘 소녀</title>
+
+    <link rel="stylesheet" href="../css/j_reset.css">
+    <link rel="stylesheet" href="SkyShip.css">
+
+
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <h1 class="logo">하늘소녀</h1>
+            <nav class="nav">
+                <ul class="nav_ul">
+                    <li class="nav_li _active"><a href="#">home</a></li>
+                    <li class="nav_li"><a href="#">menu</a></li>
+                    <li class="nav_li"><a href="#">product</a></li>
+                    <li class="nav_li"><a href="#">about</a></li>
+                    <li class="nav_li"><a href="#">Q/A</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="bg_wrap">
+            <div class="zdiv _girl" id="girl1"><img src="../img/배소녀.png" alt="배소녀"></div>
+            <div class="zdiv _fish" id="fish1"><img src="../img/물고기.png" alt="물고기"></div>
+            <div class="zdiv _flower" id="flower1"><img src="../img/꽃잎.png" alt="꽃잎"></div>
+            <div class="zdiv _bg" id="bg1"><h2>Sky.com. Manage your</h2></div>
+        </div>
+        <div class="bg_2">
+            <h1>SKY.Ship</h1>
+            <p>Latest superfast fibre, broadband, TV packages & mobile deals with Sky.com. Manage your My Sky account or discover more about our services.</p>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript">
+    let bg = document.getElementById("bg1");
+    let girl = document.getElementById("girl1");
+    let fish = document.getElementById("fish1");
+    let flower = document.getElementById("flower1");
+
+    window.addEventListener("scroll",function(){
+        var value = window.scrollY;
+
+        bg.style.top = value * 0.35 + "px";
+        girl.style.top = value * 0.25 + "px";
+    /*  fish.style.top = value * 0.25 + "px"; */
+        flower.style.top = value * 0.15 + "px";
+    })
+</script>
+
+</html>
