@@ -232,6 +232,12 @@ section#cont1 {
     font-style: normal;
     font-size: .95rem;
     color: #b8b8b8;
+    margin-top: 5px;
+}
+.his-desc .hisp span {
+    font-size: .8rem;
+    line-height: 1.8;
+    margin-top: 5px;
 }
 
 

@@ -119,6 +119,7 @@
         font-size: 0.8em;
         line-height: 1.7;
     }
+    main .title span {display: none;}
     
     main .nav span a {font-size: 22px;}
     
@@ -165,7 +166,6 @@
 @media only screen and (max-width : 440px){
     main .nav {height: 42%;}
     main .title h1 {font-size: 55px;}
-    main .title span {font-size: 0.85em;}
     
     .cont1-warp .text p {font-size: 53px;}
     .cont1-warp .text span {font-size: 9px;}
