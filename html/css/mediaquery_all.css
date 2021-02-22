@@ -1,7 +1,7 @@
 /* mediaquery */
 
 @media only screen and (min-width : 1600px){
-    .word p:nth-child(1) {
+    /* .word p:nth-child(1) {
         font-size: 2rem; 
         line-height: 2.4;
         margin-bottom: 30px;
@@ -9,7 +9,7 @@
     .word p:nth-child(2) {
         font-size: 1.7rem; 
         line-height: 2.4;
-    }
+    } */
 
 
     #side .sub {margin: 10px 0 10px 8px;}
@@ -56,22 +56,19 @@
     
     .fix-img02 {
         /* background-attachment:scroll; */
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: 100% 100%;
+        /* background-position: center center; */
+        /* background-size: 100% 100%; */
         
     }
     .fix-img03 {
         /* background-attachment:scroll; */
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: 100% 100%;
+        /* background-position: center center; */
+        /* background-size: 100% 100%; */
     }
     .fix-img04 {
         /* background-attachment:scroll; */
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: 100% 100%;
+        /* background-position: center center; */
+        /* background-size: 100% 100%; */
     }
 }
 

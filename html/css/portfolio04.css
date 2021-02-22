@@ -162,6 +162,7 @@ section#cont1 {
 .fix-img04 {
     width: 100%; height: 350px;
     background-image: url(../img/pinkship1.jpg);
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -289,8 +290,8 @@ footer {
 footer strong {
     display: block;
     font-weight: 500;
-    font-size: 1.2em;
-    margin-bottom: 3px;
+    font-size: 1.1em;
+    /* margin-bottom: 3px; */
 }
 footer span {
     font-weight: 200;
