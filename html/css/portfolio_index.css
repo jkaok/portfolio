@@ -109,7 +109,6 @@ header .bars {
 }
 
 /* 명언 텍스트 나타나기 */
-
 .swiper-wrapper .swiper-slide-active .text {
   /* 나타나기 */
   opacity: 1;
@@ -122,8 +121,8 @@ header .bars {
   width: 550px; 
   /* 숨겨두기 */
   opacity: 0;
-  transform: translateX(-40px);
-  transition: all 0.6s;
+  transform: translateX(-50px);
+  transition: all 0.9s;
 }
 .text ._p1 {
   font-size: 1.1rem;
@@ -368,7 +367,7 @@ header .bars {
   #menu a {
     font-size: 4.5rem;
   }
-  .word {
+  .text {
     top: 47%;
   }
 }
@@ -377,7 +376,7 @@ header .bars {
   #menu a {
     font-size: 3.7rem;
   }
-  .word {
+  .text {
     top: 50%;
   }
 }
@@ -386,7 +385,7 @@ header .bars {
   header nav ul {
     display: none;
   }
-  .word {
+  .text {
     top: 65%;
   }
 }
@@ -398,15 +397,15 @@ header .bars {
   #menu a {
     font-size: 2.9rem;
   }
-  .word {
+  .text {
     top: 55%;
   }
-  .word p:nth-child(1) {
+  .text ._p1 {
     font-size: 0.9rem;
     line-height: 1.8;
     margin-bottom: 16px;
   }
-  .word p:nth-child(2) {
+  .text ._p2 {
     font-size: 0.9rem;
     line-height: 1.8;
   }
@@ -433,10 +432,10 @@ header .bars {
     font-size: 2.2rem;
   }
 
-  .word p:nth-child(1) {
+  .text ._p1 {
     font-size: 0.86rem;
   }
-  .word p:nth-child(2) {
+  .text ._p2 {
     font-size: 0.86rem;
   }
 

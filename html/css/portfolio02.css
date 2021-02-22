@@ -164,10 +164,12 @@ section#cont1 {
 .fix-img02 {
     width: 100%; height: 350px;
     background-image: url(../img/book1.jpg);
-    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     margin-top: 77px;
+    background-attachment: -webkit-fixed; <!-- 크롬과 사파리 4.0 이상을 위한 코드 -->
+    background-attachment: -ms-fixed;    <!-- 익스플로러 10.0 이상을 위한 코드 -->
+    background-attachment: fixed; 
 }
 .fix-img02 div{
     width: 100%;height: 100%;
