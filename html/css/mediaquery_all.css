@@ -53,23 +53,7 @@
     .web:nth-child(2) figcaption {margin-top: 0px;}
     
     #cont1 .three span {font-size: 1.5rem;}
-    
-    .fix-img02 {
-        /* background-attachment:scroll; */
-        /* background-position: center center; */
-        /* background-size: 100% 100%; */
-        
-    }
-    .fix-img03 {
-        /* background-attachment:scroll; */
-        /* background-position: center center; */
-        /* background-size: 100% 100%; */
-    }
-    .fix-img04 {
-        /* background-attachment:scroll; */
-        /* background-position: center center; */
-        /* background-size: 100% 100%; */
-    }
+
 }
 
 @media only screen and (max-width : 730px){
@@ -141,7 +125,22 @@
     .his-desc .hisp small:nth-child(1) {
         padding-left:0px;
     }
-    
+    .fix-img02 {
+        background-attachment:scroll;
+        background-position: center center;
+        background-size: 100% 100%;
+        
+    }
+    .fix-img03 {
+        background-attachment:scroll;
+        background-position: center center;
+        background-size: 100% 100%;
+    }
+    .fix-img04 {
+        background-attachment:scroll;
+        background-position: center center;
+        background-size: 100% 100%;
+    }
     .fix-img02 h3 {font-size: 1.9rem;}
     .fix-img03 h3 {font-size: 1.9rem;}
     .fix-img04 h3 {font-size: 2.2rem;}
