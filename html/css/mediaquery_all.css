@@ -119,6 +119,8 @@
     main .title span {display: none;}
     
     main .nav span a {font-size: 22px;}
+
+    main .nav2.show {display: none;}
     
     .cont1-warp {margin-top: 70px;}
     .line {margin-top: 50px;}

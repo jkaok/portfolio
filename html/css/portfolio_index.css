@@ -426,6 +426,10 @@ header .bars {
     font-size: 0.6rem;
     line-height: 15px;
   }
+
+  #wrap .swiper-container-vertical>.swiper-pagination-bullets {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 380px) {

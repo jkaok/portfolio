@@ -34,7 +34,7 @@ $(function(){
 
          /* 다른메뉴 나오기.가리기 */
          var $nav = $("main .nav");
-         var $menu = $("main .menu");
+         var $menu = $("main .nav2");
 
          if(wScroll > 100){
             $nav.addClass("none");

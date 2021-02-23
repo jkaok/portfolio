@@ -67,12 +67,12 @@ main .nav span a {
 }
 main .nav span a:hover {opacity: 0.8;}
 
-/* menu */
-main .menu.show {display: block;transition:all 0.3s;}
-main .menu {
+/* nav2 */
+main .nav2.show {display: block;transition:all 0.3s;}
+main .nav2 {
     display: none;
     position: fixed; top: 0;
-    width: 100%; height: 60px;
+    width: 100%; height: 65px;
     background-color:#fff;
     color:#333;
     font-family: 'Raleway', sans-serif; 
@@ -80,36 +80,36 @@ main .menu {
     z-index: 20;
     transition:all 0.3s;
 }
-.menu ul {
+.nav2 ul {
     width: 60%;
     margin-left: 30px;
 }
-.menu li {
+.nav2 li {
     display: inline-block;
     width: 23%;
     
 }
-.menu li a {
+.nav2 li a {
     display: block; 
     width: 100%; 
     padding: 0px 10px;
     line-height: 60px;
     color:#444;
 }
-.menu span {
+.nav2 span {
     display: block;
-    position: absolute; top: 0; right: 30px;
+    position: absolute; top: 0; right: 22px;
     z-index: 22;
 }
-.menu span a {
+.nav2 span a {
     display: block;
-    line-height: 60px;
+    line-height: 65px;
     color:#fff;
-    text-shadow: inset 1px 1px 1px #ccc; 
-    font-weight: bold; font-size: 28px;
+    text-shadow: 1px 1px 1px #ccc; 
+    font-weight: bold; font-size: 22px;
     transition:text-shadow 0.3s; 
 }
-.menu span a:hover {text-shadow: 1px 1px 1px rgb(128, 128, 128);}
+.nav2 span a:hover {text-shadow: 1px 1px 1px rgb(128, 128, 128);}
 
 /* .title */
 main .title {
