@@ -96,9 +96,16 @@
 }
 
 @media only screen and (max-width : 550px){
+    main {height: 100vh;}
+    main .title {
+        margin-top: 50px;
+    }
     main .title p {
         font-size: 0.8em;
         line-height: 1.7;
+    }
+    main .title p.mt30 {
+        margin-top: 30px;
     }
     main .title span {display: none;}
     
