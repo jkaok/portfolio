@@ -122,7 +122,7 @@
         <!-- footer -->
         <footer>
             <strong>portfolio</strong>
-            <span>copyright &#169; 2020 jang kyeong a</span>
+            <span>copyright &#169; 2022 jang kyeong a</span>
         </footer>
         
     </div>
@@ -141,6 +141,21 @@
             
             //라이트박스
             $(".lightbox").lightGallery();
+        });
+
+        /* 다른메뉴 나오기.가리기 */
+        $(window).scroll(function(){
+            var wScroll = $(this).scrollTop();
+            var $nav = $("main .nav");
+            var $menu = $("main .nav2");
+
+            if(wScroll > 100){
+                $nav.addClass("none");
+                $menu.addClass("show");
+            }else if(wScroll == 0){
+                $nav.removeClass("none");
+                $menu.removeClass("show");
+            }
         });
     </script>
     <script src="js/portfolio_parallax2.js" type="text/javascript" text="javascript"></script>

@@ -258,7 +258,7 @@ section#contents {}
 @media only screen and (min-resolution:1.5dppx){
             .blog1 .img_normal {display: none;}
             .blog1 .img_retina {display: initial;} /* (1.5배일때) 2x 일반화면에서는 안보여짐 */            
-};
+}
 
 /* 블로그 2 */
 .blog2 h5 {color: #fff; text-align: center; padding: 30px 30px; text-transform: uppercase;}
@@ -467,7 +467,11 @@ video {width: 100%;}
     transform: translate(-50%, -50%) rotate(0deg); opacity: 1;
 }
 
-
+@media (max-width:767px) {
+    #cont_center {  
+        min-height: auto; 
+    }
+}
 
 
 

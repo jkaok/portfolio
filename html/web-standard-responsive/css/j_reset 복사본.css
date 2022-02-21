@@ -5,13 +5,11 @@ body,div,ul,li,dl,dt,ol,h1,h2,h3,h4,h5,h6,input,fieldset,legend,p,select,table,t
 
 a {text-decoration: none; color: #fff; }
 
-.clearfix::after, .clearfix::before {content: ""; display: block; clear: both;}
+.clearfix::after {content: ""; display: block; clear: both;}
 
 /* 폰트 초기화 */
-body, input, textarea, select, button, table {
-    font-family:'Nanum Gothic', sans-serif;
-    font-size: 15px; line-height: 1.5;
-}
+body, input, textarea, select, button, table {font-family:'Nanum Gothic', sans-serif;
+    font-size: 15px; line-height: 1.5;}
 
 /* 블릿기호 초기화 */
 dl,li,ul,ol,menu {list-style: none;}
@@ -41,12 +39,3 @@ button {border: 0; outline: none;}
 .mt40 {margin-top: 40px !important;}
 .mt45 {margin-top: 45px !important;}
 .mt50 {margin-top: 50px !important;}
-
-/* mobile/web : none/block */
-.onM { display: none; }
-.onW { display: block; }
-
-@media (max-width:500px) {
-.onM { display: block; }
-.onW { display: none; }
-}

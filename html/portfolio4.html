@@ -30,6 +30,17 @@
                 </ul>
                 <span><a href="index.html">portfolio</a></span>
             </nav>
+
+            <div class="nav2">
+                <ul class="clearfix">
+                    <li class="active"><a href="portfolio2.html">Editorial Design</a></li>
+                    <li><a href="portfolio3.html">Web Publishing</a></li>
+                    <li><a href="portfolio4.html">Graphic Edit</a></li>
+                    <li><a href="portfolio5.html">About</a></li>
+                </ul>
+                <span><a href="index.html">portfolio</a></span>
+            </div>
+
             <div class="title">
                 <h1>Photo Graphic Edit</h1>
                 <h2>사진편집</h2>
@@ -118,7 +129,7 @@
         <!-- footer -->
         <footer>
             <strong>portfolio</strong>
-            <span>copyright &#169; 2020 jang kyeong a</span>
+            <span>copyright &#169; 2022 jang kyeong a</span>
         </footer>
     </div>
 
@@ -133,6 +144,20 @@
 				$("body").css("height", window_height); 
 			});
 
+            /* 다른메뉴 나오기.가리기 */
+            $(window).scroll(function(){
+                var wScroll = $(this).scrollTop();
+                var $nav = $("main .nav");
+                var $menu = $("main .nav2");
+
+                if(wScroll > 100){
+                    $nav.addClass("none");
+                    $menu.addClass("show");
+                }else if(wScroll == 0){
+                    $nav.removeClass("none");
+                    $menu.removeClass("show");
+                }
+            });
         });
     </script>
     <script src="js/portfolio_parallax4.js" type="text/javascript" text="javascript"></script>

@@ -32,18 +32,16 @@ $(function(){
             $lightbox.eq(7).addClass("show");
         }
 
-         /* 다른메뉴 나오기.가리기 */
-         var $nav = $("main .nav");
-         var $menu = $("main .nav2");
+        var $nav = $("main .nav");
+        var $menu = $("main .nav2");
 
-         if(wScroll > 100){
-            $nav.addClass("none");
-            $menu.addClass("show");
-         }else if(wScroll == 0){
-            $nav.removeClass("none");
-            $menu.removeClass("show");
-         }
-        
+            if(wScroll > 100){
+                $nav.addClass("none");
+                $menu.addClass("show");
+            }else if(wScroll == 0){
+                $nav.removeClass("none");
+                $menu.removeClass("show");
+            }
     });
     
 

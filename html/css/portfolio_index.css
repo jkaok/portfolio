@@ -398,7 +398,7 @@ header .bars {
 
 @media only screen and (max-width: 490px) {
   #menu {
-    top: 2.4%;
+    top: 7%;
     margin-right: 15px;
   }
   #menu a {

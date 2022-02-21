@@ -30,7 +30,7 @@
 
 @media only screen and (max-width : 980px){
     .cont1-warp .text p {font-size: 110px;}
-    main .title {width: 92%;}
+    main .title {width: 90%; left: 5%;}
 }
 
 /* portfolio3 */
@@ -75,7 +75,7 @@
     #intro p {
         white-space:normal; 
         margin-top: 50px;
-        text-align: left;
+        text-align: center;
     }
     
     #cont1 .three {padding-bottom: 60px;}
@@ -102,7 +102,8 @@
     }
     main .title p {
         font-size: 0.8em;
-        line-height: 1.7;
+        line-height: 2.2;
+        letter-spacing: -0.4px;
     }
     main .title p.mt30 {
         margin-top: 30px;
@@ -120,17 +121,18 @@
     .cont1-warp .text p {font-size: 75px;}
     .cont1-warp .text span {font-size: 12px;}
     .fix-img h3 {font-size: 2rem;}
-    
+    #history .his { display: block; }
     #history .his .his-tit {
         width: 30%;
-        font-size: 1rem;
+        font-size: 1.2rem;
+        padding-bottom: 21px;
     }
     #history .his .his-desc {
-        width: 68%;
-        font-size: 1rem;
+        width: auto;
+        font-size: 0.9rem;
     }
-    .his-desc .hisp small:nth-child(1) {
-        padding-left:0px;
+    .his-desc .hisp small {
+        padding-left: 8px;
     }
     .fix-img02 {
         background-attachment:scroll;
@@ -171,18 +173,27 @@
 @media only screen and (max-width : 440px){
     main .nav {height: 42%;}
     main .title h1 {font-size: 55px;}
+
+    main .nav {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 88%;
+    }
     
     .cont1-warp .text p {font-size: 53px;}
     .cont1-warp .text span {font-size: 9px;}
     
     #cont1 .three span {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         line-height: 2.1;
     }
     #cont1 .three span small {
         font-size: 1rem; 
         white-space: pre-wrap;
     }
+    main .title .txt_about {font-size: 1rem;}
+    main .title h2 {font-size: 24px;}
 }
 
 
