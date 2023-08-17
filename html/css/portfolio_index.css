@@ -134,7 +134,7 @@ header .bars {
 #wrap .swiper-slide .text .second {
   font-size: 1.2rem;
   line-height: 1.9;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6) !important; 
   font-style: italic;
   /* 나타나기:지연하기 */
   transition-delay: 600s;
