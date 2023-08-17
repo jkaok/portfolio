@@ -106,8 +106,8 @@ main .nav2 {
 .nav2 span a {
     display: block;
     line-height: 65px;
-    color:rgb(6, 147, 221, 0.8);
-    font-weight: bold; font-size: 26px;
+    color:#fff;
+    font-weight: bold; font-size: 23px;
     padding-right: 25px;
     transition:text-shadow 0.3s; 
 }
@@ -309,7 +309,7 @@ footer {
     text-align: center;
     color: #fff;
     font-family: 'Raleway', sans-serif; 
-    padding: 40px 0;
+    padding: 25px 0;
     text-transform: uppercase;
 }
 footer strong {
