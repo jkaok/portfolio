@@ -113,6 +113,7 @@ header .bars {
   /* 나타나기 */
   opacity: 1;
   transform: translateX(0px);
+  color: rgba(255, 255, 255, 0.6);
 }
 #wrap .swiper-slide .text {
   position: absolute;
@@ -124,7 +125,7 @@ header .bars {
   transform: translateX(-50px);
   transition: all 0.9s;
 }
-#wrap .swiper-slide .text span {display: block; color: rgba(255, 255, 255, 0.6);}
+#wrap .swiper-slide .text span {display: block; /*color: rgba(255, 255, 255, 0.6);*/}
 #wrap .swiper-slide .text .first {
   font-size: 1.1rem;
   line-height: 1.9;
@@ -134,7 +135,7 @@ header .bars {
 #wrap .swiper-slide .text .second {
   font-size: 1.2rem;
   line-height: 1.9;
-  color: rgba(255, 255, 255, 0.6) !important; 
+  /* color: rgba(255, 255, 255, 0.6) !important;  */
   font-style: italic;
   /* 나타나기:지연하기 */
   transition-delay: 600s;
