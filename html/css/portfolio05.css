@@ -177,7 +177,7 @@ section#cont1 {
 #cont1 .three {
     height: 170px;
     padding-top: 130px ;
-    margin-bottom: 100px;
+    padding-bottom: 18%;
     
 }
 #cont1 .three span:before {
